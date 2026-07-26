@@ -1,0 +1,4 @@
+TEMPLATE_ID                     ALIAS    STATUS     JOB_ID                                  CREATED_AT              IMAGE_INFO
+tpl-c33298206d4846deac922031    -        READY      33f65b6e-b0e6-4d1a-8c78-9a2764588e38    2026-07-12T10:33:14Z    cube-sandbox-cn.tencentcloudcr.com/cube-sandbox/sandbox-code:latest
+tpl-2a46a17174084de6b09abc42    -        READY      3144a641-bb43-4f6c-9b8f-b53e1cf1fd4f    2026-07-04T15:43:42Z    cube-sandbox-cn.tencentcloudcr.com/cube-sandbox/sandbox-code:latest@sha256:5ad589957ae13e596554a723a95716b28cd7137b0353ed6bda1ddcafc89ca76e
+tpl-cd535c319b3147fba57e51f4    -        RUNNING    b7213227-d156-4afd-9ecd-a6c679af42f6    2026-07-12T10:30:28Z    cube-sandbox-cn.tencentcloudcr.com/cube-sandbox/sandbox-code:latest@sha256:467494c38f3c335e42d590e23d5cbb00dc15c2627c9da4f7e7f3bd9f4ec18c5e

@@ -1,0 +1,16 @@
+{
+  "timeout": 300,
+  "cube_network_config": {
+    "allowInternetAccess": true
+  },
+  "annotations": {
+    "cube.master.appsnapshot.template.id": "tpl-c33298206d4846deac922031",
+    "cube.master.appsnapshot.template.version": "v2"
+  },
+  "labels": {
+    "cube.master.instance.type": "cubebox"
+  },
+  "instance_type": "cubebox",
+  "network_type": "tap",
+  "namespace": "default"
+}

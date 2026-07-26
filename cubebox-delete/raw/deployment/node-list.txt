@@ -1,0 +1,4 @@
+NODE_ID          NODE_IP          INSTANCE_TYPE    ZONE    CPU_TYPE    HEALTHY    SCHEDULING_DISABLED    HOST_STATUS
+10.182.199.88    10.182.199.88    cubebox                              false      false                  RUNNING
+10.57.245.88     10.57.245.88     cubebox                              false      false                  RUNNING
+192.168.43.8     192.168.43.8     cubebox                              true       false                  RUNNING

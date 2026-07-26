@@ -1,0 +1,90 @@
+2026-07-26T01:39:05+08:00
+Linux zry 6.17.0-20-generic #20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+installed-version: cubemaster v0.5.1-timeout-local-20260722 (bc0366fbef1f96558ab359bbc66815c7f969c1b4) built at 2026-07-22T14:33:40Z
+cube-sandbox-control.target enabled=enabled active=active
+cube-sandbox-cube-api.service enabled=disabled active=active
+cube-sandbox-cubemaster.service enabled=disabled active=active
+cube-sandbox-cubelet.service enabled=disabled active=active
+cube-sandbox-network-agent.service enabled=disabled active=active
+● cube-sandbox-control.target - Cube Sandbox control-plane stack
+     Loaded: loaded (/etc/systemd/system/cube-sandbox-control.target; enabled; preset: enabled)
+     Active: active since Sun 2026-07-26 01:10:54 HKT; 28min ago
+
+Jul 26 01:10:54 zry systemd[1]: Reached target cube-sandbox-control.target - Cube Sandbox control-plane stack.
+
+● cube-sandbox-cube-api.service - Cube Sandbox Cube API
+     Loaded: loaded (/etc/systemd/system/cube-sandbox-cube-api.service; disabled; preset: enabled)
+     Active: active (running) since Sun 2026-07-26 01:10:50 HKT; 28min ago
+    Process: 6033 ExecStartPost=/usr/bin/bash /usr/local/services/cubetoolbox/scripts/systemd/cube-api-postcheck.sh (code=exited, status=0/SUCCESS)
+   Main PID: 6032 (cube-api)
+      Tasks: 17 (limit: 17921)
+     Memory: 18.2M (peak: 20.0M)
+        CPU: 67ms
+     CGroup: /system.slice/cube-sandbox-cube-api.service
+             └─6032 /usr/local/services/cubetoolbox/CubeAPI/bin/cube-api
+
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.612206Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=dadb096aa2b941cba17cc5f7a725cb04
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.626300Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=2d164c37ca3d486e88a878cf5095b4b0
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.636721Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=fd89e262b4944cb3847a3595438a10b4
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.636983Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=89f39b46124948f3a1bb1b66423d6852
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.637029Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=e1051fb062ce4d13a0d0ab3b5eb4cc8c
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.646285Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=7de75c822e2e4eca8dc9c7bdb1ccbd5b
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.647068Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=28660adc49114f27b3f61e2ff858b354
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.647106Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=7518dcef0af94577b91a33b74cdd3103
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.647127Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=b0f642f67e8647588a3e6f99e4022d35
+Jul 26 01:31:47 zry bash[6032]: 2026-07-25T17:31:47.667095Z  INFO cube_api::handlers::sandboxes: kill_sandbox: success sandbox_id=a3ec679655de4400a3d32e4bdeee9d6e
+
+● cube-sandbox-cubemaster.service - Cube Sandbox CubeMaster
+     Loaded: loaded (/etc/systemd/system/cube-sandbox-cubemaster.service; disabled; preset: enabled)
+     Active: active (running) since Sun 2026-07-26 01:10:49 HKT; 28min ago
+    Process: 5252 ExecStartPost=/usr/bin/bash /usr/local/services/cubetoolbox/scripts/systemd/cubemaster-postcheck.sh (code=exited, status=0/SUCCESS)
+   Main PID: 5251 (cubemaster)
+      Tasks: 18 (limit: 17921)
+     Memory: 55.7M (peak: 57.9M)
+        CPU: 14.098s
+     CGroup: /system.slice/cube-sandbox-cubemaster.service
+             └─5251 /usr/local/services/cubetoolbox/CubeMaster/bin/cubemaster
+
+Jul 26 01:10:48 zry systemd[1]: Starting cube-sandbox-cubemaster.service - Cube Sandbox CubeMaster...
+Jul 26 01:10:48 zry bash[5251]: 2026-07-26T01:10:48.56764387+08:00,listen file[/usr/local/services/cubetoolbox/CubeMaster/conf.yaml]
+Jul 26 01:10:48 zry bash[5251]: cfg:{"Common":{"MockUpdateAction":false,"DebugDumpHttpBody":false,"MockDebug":false,"MockNodeNum":0,"MockCreateDirect":false,"MockCreateDirectHandle":false,"MockHttpDirect":false,"MockCreateSleep":0,"MockPercents":null,"CubeDestroyCheckFilter":false,"Debug":{"Address":""},"HttpPort":8089,"HttpBind":"0.0.0.0","WriteTimeout":360,"ReadTimeout":120,"IdleTimeout":360,"GraceFullStopTimeoutInSec":120,"SyncMetaDataInterval":30000000000,"SyncMetricDataInterval":1000000000,"CleanSandboxCacheInterval":7200000000000,"EnabledListRunningSandboxCache":false,"AsyncTaskQueueSize":10000,"AsyncTaskWorkerNum":12,"HeadlessServiceName":"","DefaultHeadlessServiceNodesNum":1,"ListFilterOutLables":null,"CollectMetricInterval":1000000000,"ReportLocalCreateNum":false,"ReportStdevMetric":false,"GwCacheExpiredTime":15000000000,"GwCacheEnable":false,"ReportGWRedisGetMetric":false,"EnableGetStatusFromCubelet":false,"DisableHardDelete":false,"CollectSandboxMemoryWhitelist":null,"EnableAllCollectSandboxMemory":false,"FilterErrMsgErrorCode":null,"DescribeInstancesWhiteList":null,"DescribeTaskExpireTime":86400,"EnablePrivateIpQuery":false,"DbMaxRetryCount":5,"DbRetryInterval":5000000,"EnableCheckComNetIDParam":false,"EnableDescribeInstanceFromRedis":false,"MaxNICQueue":4,"DisableCreateImageCluster":null,"EnableAGSColdStartSwitch":false},"AuthConf":{"Enable":false,"SignatureExpireTimeInsec":120,"SecretKeyMap":null},"Log":{"Region":"","Cluster":"","Module":"cubemaster","Path":"/data/log/CubeMaster","FileSize":0,"FileNum":0,"Level":"info","EnableLogMetric":false},"CubeletConf":{"Grpc":{"GrpcPort":9999,"CleanConnTaskIntervalInMin":60,"CleanConnTaskRoutinePoolSize":24,"ConnExpireTimeInSec":180},"CommonTimeoutInsec":30,"CreateImageTimeoutInSec":300,"DefaultTimeoutInsec":-1,"CreateTimeoutInsec":300,"AsyncFlows":null,"RetryCode":null,"LoopRetryCode":null,"ReuseRetryCode":null,"CircuitBreakCode":null,"ExcludeLoopRetryCode":null,"BackoffRetryCode":null,"MaxRetries":5,"LoopMaxRetries":100,"BufferQueueMinJob":10,"CreateConcurrentLimit":100,"DestroyConcurentLimit":100,"ExposedPortList":["80"],"EnableExposedPort":true,"DisableRedisProxyPort":true,"MaxDelayInSecond":1,"BackoffRetryDelay":5000000},"OssDBConfig":{"Driver":"","Addr":"127.0.0.1:3306","User":"cube","Pwd":"cube_pass","DBName":"cube_mvp","ConnTimeout":5,"ReadTimeout":5,"WriteTimeout":5,"MaxIdleConns":5,"MaxOpenConns":20,"MaxConnLifeTimeSeconds":300,"MigrationLockTimeoutSeconds":0},"InstanceDBConfig":{"Driver":"","Addr":"127.0.0.1:3306","User":"cube","Pwd":"cube_pass","DBName":"cube_mvp","ConnTimeout":5,"ReadTimeout":5,"WriteTimeout":5,"MaxIdleConns":5,"MaxOpenConns":20,"MaxConnLifeTimeSeconds":300,"MigrationLockTimeoutSeconds":0},"RedisConf":{"Password":"ceuhvu123","MaxActive":32,"MaxIdle":8,"IdleTimeout":30,"DbNo":0,"Nodes":"127.0.0.1:6379","MaxRetry":2,"NodeMetricTTLSec":600,"SandboxProxyTTLSec":0},"ExtraConf":{"BlkQos":"{}","BlkQosMap":null,"FsQos":"{}","FsQosMap":null,"NetQosList":"[]","AllowedHostMountPrefixes":null},"Scheduler":{"Overhead":{"VmMemoryOverheadBase":"42Mi","VmMemoryOverheadCoefficient":64,"HostMemoryOverheadBase":"24Mi","CubeMsgMemoryOverhead":"16Mi","VmCpuOverhead":"0","HostCpuOverhead":"0.3"},"NodeMaxMvmNum":3000,"NodeMaxMvmNumReserveNumPercent":1,"NodeMaxMemReservedInMB":10240,"NodeMaxCpuUtil":80,"PreSelectNum":-1,"PrioritySelectNum":1,"LeastSelectName":"random","MetricUpdateTimeout":300000000000,"LocalMetricUpdateTimeout":300000000000,"Filter":{"EnableFilters":["cpu","mem","template_locality","realtime_create_num"]},"Score":null,"PostScore":null,"DisableCircuitFilter":false,"InBackoffMode":false,"AffinityConf":null,"NodeMaxMvmNumConf":null,"EnableRunInstanceHostIps":false,"MaxMvmCPU":"","MaxMvmMemory":"","DiskUsageMaxPercent":80,"LargeSizeAffinityConf":null,"NodeMaxMemReservedConf":null,"DisableBackoffFilterInstanceType":null,"ThirtpartyFilterInstanceType":null,"InstanceTypeConf":null,"NodeAffinitySelectorAllowedKeys":null,"IgnoreRedisAllocation":false,"OvercommitRatio":{"CPURatio":3,"MemRatio":2},"OvercommitRatioByType":null},"ReqTemplateConf":{"CubeBoxReqTemplate":"{\"volumes\":[{\"name\":\"tmp\",\"volume_source\":{\"empty_dir\":{\"medium\":0}}}],\"containers\":[{\"name\":\"cubebox-default\",\"envs\":[{\"key\":\"TZ\",\"value\":\"Asia/Shanghai\"},{\"key\":\"TERM\",\"value\":\"xterm\"}],\"volume_mounts\":[{\"name\":\"tmp\",\"container_path\":\"/\"}],\"security_context\":{\"privileged\":true,\"readonly_rootfs\":false,\"no_new_privs\":false}}],\"network_type\":\"tap\",\"cube_network_config\":{\"allowInternetAccess\":true,\"denyOut\":[\"10.0.0.0/8\",\"100.64.0.0/10\",\"172.16.0.0/12\",\"192.168.0.0/16\"]}}","WhitelistReqTag":{"WorkingDir":true,"RLimit":true,"DnsConfig":true,"HostAliases":true,"Poststop":true,"Prestop":true}},"HookWhitelist":null,"CubeEgressConf":null,"VolumePlugins":[{"Name":"cos","Type":"binary","BinaryPath":"/usr/local/services/cubetoolbox/CubeMaster/plugin/cube-volume-cos","SocketPath":""}]}
+Jul 26 01:10:48 zry bash[5251]: 2026/07/26 01:10:48 migrate: 7 applied migration version(s) have no fingerprint baseline and are NOT content-checked (e.g. applied before fingerprinting existed): 0,1,2,3,4,5,6
+Jul 26 01:10:49 zry systemd[1]: Started cube-sandbox-cubemaster.service - Cube Sandbox CubeMaster.
+
+● cube-sandbox-cubelet.service - Cube Sandbox Cubelet
+     Loaded: loaded (/etc/systemd/system/cube-sandbox-cubelet.service; disabled; preset: enabled)
+     Active: active (running) since Sun 2026-07-26 01:10:45 HKT; 28min ago
+    Process: 4069 ExecStartPre=/usr/bin/bash /usr/local/services/cubetoolbox/scripts/systemd/prepare-compute-role.sh (code=exited, status=0/SUCCESS)
+    Process: 4082 ExecStart=/usr/bin/bash /usr/local/services/cubetoolbox/scripts/systemd/cubelet-start.sh (code=exited, status=0/SUCCESS)
+   Main PID: 4438 (cubelet)
+      Tasks: 0 (limit: 17921)
+     Memory: 83.2M (peak: 96.1M)
+        CPU: 1.430s
+     CGroup: /system.slice/cube-sandbox-cubelet.service
+             ‣ 4438 /usr/local/services/cubetoolbox/Cubelet/bin/cubelet --config /usr/local/services/cubetoolbox/Cubelet/config/config.toml --dynamic-conf-path /usr/local/services/cubetoolbox/Cubelet/dynamicconf/conf.yaml
+
+Jul 26 01:10:44 zry bash[4082]: [one-click-systemd] cubelet initial pid=4104
+Jul 26 01:10:44 zry bash[4438]: time="2026-07-26T01:10:44+08:00" level=warning msg="Ignoring unknown key in TOML for plugin" error="strict mode: fields in the document are missing in the target struct" key=cube_router_cidr plugin=io.cubelet.internal.v1.network
+Jul 26 01:10:44 zry bash[4438]: time="2026-07-26T01:10:44+08:00" level=warning msg="Ignoring unknown key in TOML for plugin" error="strict mode: fields in the document are missing in the target struct" key=cube_router_enable plugin=io.cubelet.internal.v1.network
+Jul 26 01:10:44 zry bash[4438]: 2026-07-26T01:10:44.707667728+08:00,listen file[/usr/local/services/cubetoolbox/Cubelet/dynamicconf/conf.yaml]
+Jul 26 01:10:44 zry bash[4438]: cfg:{"Common":{"CommonTimeout":10000000000,"LogLevel":"","EnableNetworkAgent":true,"NetworkAgentEndpoint":"grpc+unix:///tmp/cube/network-agent-grpc.sock","DescribeAsyncInterval":100000000,"EnablePFMode":false,"DescribeBDFInterval":10000000,"DescribeBDFTimeout":10000000000,"GetBDFByUuidCmd":"/usr/local/services/AdamPlugins-1.0/snhost_snic_sdk/cath/bm/tools/get_bdf_by_uuid","GetBDFByIfNameCmd":"/usr/local/services/AdamPlugins-1.0/snhost_snic_sdk/cath/bm/tools/get_bdf_by_ifname","CommandTimeout":1000000000,"DisableHostCgroup":true,"DisableVmCgroup":false,"EnableSandboxExecCmdBeforeExist":false,"SandboxExecCmdTimeOut":5000000000,"SandboxExecCmdBeforeExist":["sh","/usr/local/cubetools/cube_exec_cmd_before_exist.sh"],"SandboxExecCmdBeforeExistLogOut":false,"SandboxExecCmdOutMaxLines":2000,"SandboxExecCmdMatchLine":"","SandboxExecCmdAfterMatch":null,"SandboxExecCmdBase64AfterMatch":"","SandboxExecCmdAfterMatchLogOut":false,"CgroupDisableMemoryReparentFile":"","CgroupDisableCpusetList":"","DisableHostNetfile":true,"DefaultDNSServers":["119.29.29.29"],"ReconcileInterval":300000000000,"DisableCubeBoxTemplateBaseFormatPoolOfNumberVer":false},"Tenant":{"Tenants":{},"UseRespectiveNamespace":false,"DefaultNS":"default","ZiyanUinListStr":""},"MetaServerConfig":{"MetaServerEndpoint":"127.0.0.1:8089","NodeStatusMaxImages":40000},"HostConf":{"Quota":{"Cpu":0,"Mem":"","MvmLimit":0,"CreationConcurrentNum":0,"PausedResourceReleaseRatio":0},"GC":{"CodeExpirationTime":"72h","ImageExpirationTime":"24h"},"SchedulerLabel":"default-cluster"}}
+Jul 26 01:10:44 zry bash[4438]: 2026/07/26 01:10:44 mounted state tmpfs /data/cubelet/state size=1024m
+Jul 26 01:10:44 zry bash[4438]: 2026/07/26 01:10:44 set /data/cubelet/root as shared mount
+Jul 26 01:10:45 zry bash[4082]: /usr/local/services/cubetoolbox/scripts/systemd/cubelet-start.sh: 第 56 行：  4104 已杀死               ( export CUBE_SANDBOX_NODE_IP="${CUBE_SANDBOX_NODE_IP}"; exec "${CUBELET_BIN}" --config "${CUBELET_CONFIG}" --dynamic-conf-path "${CUBELET_DYNAMICCONF}" )
+Jul 26 01:10:45 zry bash[4082]: [one-click-systemd] cubelet stable pid=4438
+Jul 26 01:10:45 zry systemd[1]: Started cube-sandbox-cubelet.service - Cube Sandbox Cubelet.
+
+● cube-sandbox-network-agent.service - Cube Sandbox network-agent
+     Loaded: loaded (/etc/systemd/system/cube-sandbox-network-agent.service; disabled; preset: enabled)
+     Active: active (running) since Sun 2026-07-26 01:10:44 HKT; 28min ago
+    Process: 3080 ExecStartPost=/usr/bin/bash /usr/local/services/cubetoolbox/scripts/systemd/network-agent-postcheck.sh (code=exited, status=0/SUCCESS)
+   Main PID: 3066 (network-agent)
+      Tasks: 23 (limit: 17921)
+     Memory: 423.6M (peak: 427.3M)
+        CPU: 4.412s
+     CGroup: /system.slice/cube-sandbox-network-agent.service
+             └─3066 /usr/local/services/cubetoolbox/network-agent/bin/network-agent --cubelet-config /usr/local/services/cubetoolbox/Cubelet/config/config.toml --state-dir /data/cubelet/network-agent/state
+
+Jul 26 01:10:43 zry systemd[1]: Starting cube-sandbox-network-agent.service - Cube Sandbox network-agent...
+Jul 26 01:10:43 zry bash[3080]: [one-click-systemd] waiting for network-agent healthz: url=http://127.0.0.1:19090/healthz tap_init_num=500 timeout=300s
+Jul 26 01:10:44 zry systemd[1]: Started cube-sandbox-network-agent.service - Cube Sandbox network-agent.

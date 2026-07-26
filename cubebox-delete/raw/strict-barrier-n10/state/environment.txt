@@ -1,0 +1,13 @@
+2026-07-26T01:29:07,771073073+08:00
+Linux zry 6.17.0-20-generic #20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+release_version=v0.5.1-timeout-local-20260722
+git_commit=bc0366fbef1f96558ab359bbc66815c7f969c1b4
+built_at=2026-07-22T14:33:40Z
+manifest=release-manifest.json
+active
+active
+active
+active
+active
+{"status":"ok","sandboxes":0}
+{"ret":{"ret_code":200,"ret_msg":"Success"}}

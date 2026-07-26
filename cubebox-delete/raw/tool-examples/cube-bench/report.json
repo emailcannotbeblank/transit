@@ -1,0 +1,93 @@
+{
+  "config": {
+    "api_url": "http://127.0.0.1:3000",
+    "concurrency": 10,
+    "host_mount": "",
+    "mode": "create-delete",
+    "template": "tpl-c33298206d4846deac922031",
+    "total": 10,
+    "warmup": 0
+  },
+  "create": {
+    "avg": 99.99960000000002,
+    "count": 10,
+    "max": 109.291,
+    "min": 79.113,
+    "p50": 103.301,
+    "p90": 106.046,
+    "p95": 109.291,
+    "p99": 109.291,
+    "std": 8.990163491283127
+  },
+  "delete": {
+    "avg": 102.3432,
+    "count": 10,
+    "max": 124.972,
+    "min": 83.272,
+    "p50": 104.094,
+    "p90": 107.73,
+    "p95": 124.972,
+    "p99": 124.972,
+    "std": 11.370871810610359
+  },
+  "raw": [
+    {
+      "create_ms": 103.301,
+      "delete_ms": 83.272,
+      "seq": 2
+    },
+    {
+      "create_ms": 79.113,
+      "delete_ms": 107.73,
+      "seq": 10
+    },
+    {
+      "create_ms": 96.268,
+      "delete_ms": 91.07,
+      "seq": 4
+    },
+    {
+      "create_ms": 103.366,
+      "delete_ms": 93.245,
+      "seq": 5
+    },
+    {
+      "create_ms": 103.273,
+      "delete_ms": 106.422,
+      "seq": 6
+    },
+    {
+      "create_ms": 105.173,
+      "delete_ms": 104.974,
+      "seq": 1
+    },
+    {
+      "create_ms": 106.046,
+      "delete_ms": 104.094,
+      "seq": 7
+    },
+    {
+      "create_ms": 109.291,
+      "delete_ms": 100.827,
+      "seq": 8
+    },
+    {
+      "create_ms": 103.312,
+      "delete_ms": 106.826,
+      "seq": 9
+    },
+    {
+      "create_ms": 90.853,
+      "delete_ms": 124.972,
+      "seq": 3
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "success_rate": 1,
+    "successful": 10,
+    "throughput_qps": 46.19856494321689,
+    "total_time_s": 0.21645694
+  },
+  "timestamp": "2026-07-25T17:31:28Z"
+}

@@ -1,0 +1,5 @@
+NODE_SCOPE       1-1
+NODES_SCANNED    1/1
+SANDBOX_COUNT    0
+
+sandbox_id    status    host_id    create_at    pause_at

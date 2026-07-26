@@ -1,0 +1,200 @@
+{
+  "notes": [
+    "iostat and vmstat first since-boot samples are excluded",
+    "one-second sampling is coarser than this sub-second lifecycle run"
+  ],
+  "iostat": {
+    "loop0": {
+      "r_kib_s": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 22.857,
+        "max": 160.0
+      },
+      "w_kib_s": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 44.643,
+        "max": 125.5
+      },
+      "r_await_ms": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 0.014,
+        "max": 0.1
+      },
+      "w_await_ms": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 5.571,
+        "max": 31.42
+      },
+      "f_await_ms": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 3.921,
+        "max": 16.5
+      },
+      "avg_queue": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 0.076,
+        "max": 0.41
+      },
+      "util_pct": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 1.371,
+        "max": 5.1
+      }
+    },
+    "nvme0n1": {
+      "r_kib_s": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 5.714,
+        "max": 36.0
+      },
+      "w_kib_s": {
+        "count": 7,
+        "min": 200.0,
+        "mean": 671.429,
+        "max": 1696.0
+      },
+      "r_await_ms": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 0.509,
+        "max": 3.56
+      },
+      "w_await_ms": {
+        "count": 7,
+        "min": 1.17,
+        "mean": 1.987,
+        "max": 2.91
+      },
+      "f_await_ms": {
+        "count": 7,
+        "min": 0.17,
+        "mean": 0.979,
+        "max": 3.4
+      },
+      "avg_queue": {
+        "count": 7,
+        "min": 0.04,
+        "mean": 0.147,
+        "max": 0.43
+      },
+      "util_pct": {
+        "count": 7,
+        "min": 3.3,
+        "mean": 8.0,
+        "max": 12.9
+      }
+    }
+  },
+  "pidstat": {
+    "network-agent": {
+      "cpu_pct": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 0.286,
+        "max": 2.0
+      },
+      "rss_kib": {
+        "count": 7,
+        "min": 113716.0,
+        "mean": 113716.0,
+        "max": 113716.0
+      }
+    },
+    "cubelet": {
+      "cpu_pct": {
+        "count": 7,
+        "min": 3.0,
+        "mean": 6.0,
+        "max": 9.0
+      },
+      "rss_kib": {
+        "count": 7,
+        "min": 110280.0,
+        "mean": 124073.714,
+        "max": 130692.0
+      }
+    },
+    "cubemaster": {
+      "cpu_pct": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 1.429,
+        "max": 3.0
+      },
+      "rss_kib": {
+        "count": 7,
+        "min": 46972.0,
+        "mean": 47350.857,
+        "max": 47856.0
+      }
+    },
+    "cube-api": {
+      "cpu_pct": {
+        "count": 7,
+        "min": 0.0,
+        "mean": 0.143,
+        "max": 1.0
+      },
+      "rss_kib": {
+        "count": 7,
+        "min": 18560.0,
+        "mean": 18669.714,
+        "max": 18688.0
+      }
+    }
+  },
+  "mpstat": {
+    "all_cpu_busy_pct": {
+      "count": 7,
+      "min": 2.34,
+      "mean": 6.726,
+      "max": 16.99
+    },
+    "all_cpu_iowait_pct": {
+      "count": 7,
+      "min": 0.25,
+      "mean": 0.729,
+      "max": 1.94
+    }
+  },
+  "vmstat": {
+    "run_queue": {
+      "count": 7,
+      "min": 0.0,
+      "mean": 2.571,
+      "max": 15.0
+    },
+    "blocked_tasks": {
+      "count": 7,
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "io_read_kib_s": {
+      "count": 7,
+      "min": 0.0,
+      "mean": 28.571,
+      "max": 164.0
+    },
+    "io_write_kib_s": {
+      "count": 7,
+      "min": 200.0,
+      "mean": 716.143,
+      "max": 1801.0
+    },
+    "cpu_iowait_pct": {
+      "count": 7,
+      "min": 0.0,
+      "mean": 0.714,
+      "max": 2.0
+    }
+  }
+}

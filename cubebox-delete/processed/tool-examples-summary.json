@@ -1,0 +1,52 @@
+{
+  "unit": "ms",
+  "template_id": "tpl-c33298206d4846deac922031",
+  "concurrency": 10,
+  "examples": [
+    {
+      "tool": "examples/cube-bench",
+      "success": "10/10",
+      "delete_mean": 102.343,
+      "delete_p50": 104.094,
+      "delete_p95": 124.972,
+      "delete_p99": 124.972
+    },
+    {
+      "tool": "CubeAPI/examples/benchmark.py",
+      "success": "10/10",
+      "delete_mean": 94.94,
+      "delete_p50": 95.22,
+      "delete_p95": 110.45,
+      "delete_p99": 110.45
+    },
+    {
+      "tool": "CubeAPI/examples/go",
+      "success": "10/10",
+      "delete_mean": 105.4,
+      "delete_p50": 104.6,
+      "delete_p95": 115.3,
+      "delete_p99": 115.3
+    },
+    {
+      "tool": "CubeMaster cubemastercli multirun",
+      "success": "10/10",
+      "delete_min": 94,
+      "delete_cli_p50": 121,
+      "delete_cli_p99": 139,
+      "warning": "the installed CLI duplicates each successful delete in removeMetric"
+    },
+    {
+      "tool": "Cubelet cubecli multirun",
+      "success": "10/10",
+      "delete_mean": 89.7,
+      "delete_p50": 87,
+      "delete_p99": 111,
+      "runtime_cubebox_p50": 83,
+      "runtime_cubebox_p99": 97,
+      "storage_p50": 1,
+      "storage_p99": 2,
+      "network_p50": 1,
+      "network_p99": 2
+    }
+  ]
+}

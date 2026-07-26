@@ -1,0 +1,38 @@
+File: cubelet
+Build ID: 59992bdcb60a933437a4817bc2f015e341c72434
+Type: cpu
+Time: Jul 26, 2026 at 1:40am (HKT)
+Duration: 8s, Total samples = 430ms ( 5.37%)
+Showing nodes accounting for 430ms, 100% of 430ms total
+Showing top 30 nodes out of 215
+      flat  flat%   sum%        cum   cum%
+      80ms 18.60% 18.60%       80ms 18.60%  internal/runtime/syscall.Syscall6
+      50ms 11.63% 30.23%       50ms 11.63%  github.com/prometheus/client_model/go.(*LabelPair).GetValue (inline)
+      20ms  4.65% 34.88%       70ms 16.28%  github.com/prometheus/client_golang/prometheus/internal.MetricSorter.Less
+      20ms  4.65% 39.53%       20ms  4.65%  runtime.memmove
+      10ms  2.33% 41.86%       10ms  2.33%  bufio.(*Writer).Available (inline)
+      10ms  2.33% 44.19%       10ms  2.33%  bufio.(*Writer).WriteByte
+      10ms  2.33% 46.51%       10ms  2.33%  github.com/cespare/xxhash/v2.(*Digest).Write
+      10ms  2.33% 48.84%       10ms  2.33%  github.com/containerd/ttrpc.(*channel).getmbuf
+      10ms  2.33% 51.16%      160ms 37.21%  github.com/prometheus/client_golang/prometheus.(*Registry).Gather
+      10ms  2.33% 53.49%       90ms 20.93%  github.com/prometheus/common/expfmt.MetricFamilyToText
+      10ms  2.33% 55.81%       30ms  6.98%  github.com/prometheus/common/expfmt.writeEscapedString
+      10ms  2.33% 58.14%       10ms  2.33%  github.com/prometheus/common/model.ValidationScheme.IsValidMetricName
+      10ms  2.33% 60.47%       10ms  2.33%  google.golang.org/protobuf/internal/impl.pointer.PointerSlice
+      10ms  2.33% 62.79%       10ms  2.33%  internal/abi.(*Type).Elem
+      10ms  2.33% 65.12%       10ms  2.33%  internal/runtime/maps.(*ctrlGroup).setEmpty (inline)
+      10ms  2.33% 67.44%       10ms  2.33%  runtime.(*moduledata).textAddr
+      10ms  2.33% 69.77%       10ms  2.33%  runtime.(*sweepLocked).sweep
+      10ms  2.33% 72.09%       10ms  2.33%  runtime.adjustpointers
+      10ms  2.33% 74.42%       20ms  4.65%  runtime.lock2
+      10ms  2.33% 76.74%       20ms  4.65%  runtime.mallocgcSmallScanNoHeader
+      10ms  2.33% 79.07%       10ms  2.33%  runtime.mapaccess2_fast64
+      10ms  2.33% 81.40%       10ms  2.33%  runtime.nextFreeFast (inline)
+      10ms  2.33% 83.72%       10ms  2.33%  runtime.procyield
+      10ms  2.33% 86.05%       10ms  2.33%  runtime.sellock
+      10ms  2.33% 88.37%       10ms  2.33%  runtime.stealWork
+      10ms  2.33% 90.70%       10ms  2.33%  runtime.step
+      10ms  2.33% 93.02%       60ms 13.95%  sort.partition
+      10ms  2.33% 95.35%       20ms  4.65%  strings.(*byteStringReplacer).WriteString
+      10ms  2.33% 97.67%       10ms  2.33%  sync.(*Pool).Get
+      10ms  2.33%   100%       10ms  2.33%  unicode/utf8.ValidString

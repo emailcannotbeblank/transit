@@ -1,0 +1,23 @@
+{
+  "request_id": "cleanup-1785001391387532539",
+  "sandbox_id": "58b1fc7427bc4633b9b6f885ea05cdae",
+  "ret_code": 200,
+  "ret_message": "",
+  "ext_info": {
+    "cgroup": "0",
+    "cleanup": "0",
+    "cube-sandbox-store": "0",
+    "cube-storage-db-unknown-container": "0",
+    "cubebox": "0",
+    "cubebox-inner": "0",
+    "cubebox-service-inner": "0",
+    "cubebox-service-unknown-container": "0",
+    "images": "0",
+    "netfile": "0",
+    "network": "0",
+    "storage": "0",
+    "volume": "0",
+    "workflow": "0",
+    "workflow-limiter": "0"
+  }
+}

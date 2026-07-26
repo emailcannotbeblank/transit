@@ -1,0 +1,35 @@
+Type: delay
+Showing nodes accounting for 476.24ms, 98.31% of 484.43ms total
+Dropped 336 nodes (cum <= 2.42ms)
+Showing top 30 nodes out of 65
+      flat  flat%   sum%        cum   cum%
+  291.24ms 60.12% 60.12%   397.61ms 82.08%  github.com/prometheus/client_golang/prometheus.(*Registry).Gather
+  138.61ms 28.61% 88.73%   138.61ms 28.61%  runtime.selectgo
+   10.02ms  2.07% 90.80%    10.02ms  2.07%  runtime.chansend1
+    9.63ms  1.99% 92.79%     9.73ms  2.01%  sync.(*Mutex).Unlock
+    8.66ms  1.79% 94.58%     8.66ms  1.79%  github.com/containerd/containerd/v2/core/metrics/cgroups/v2.(*Collector).Collect
+    5.34ms  1.10% 95.68%     5.34ms  1.10%  runtime.selectnbsend
+    3.49ms  0.72% 96.40%     3.49ms  0.72%  golang.org/x/sync/errgroup.(*Group).Go
+    3.34ms  0.69% 97.09%     3.34ms  0.69%  github.com/prometheus/client_golang/prometheus.(*Registry).Gather.func2
+    2.92ms   0.6% 97.69%     2.92ms   0.6%  google.golang.org/grpc.(*Server).serveStreams.func2
+    2.58ms  0.53% 98.23%     2.58ms  0.53%  runtime.systemstack_switch
+    0.34ms 0.069% 98.30%     2.79ms  0.58%  runtime.gcMarkDone
+    0.05ms 0.0095% 98.31%     6.51ms  1.34%  github.com/tencentcloud/CubeSandbox/Cubelet/services/cubebox.(*local).createContainers
+    0.03ms 0.0054% 98.31%    28.63ms  5.91%  github.com/containerd/ttrpc.(*Client).run
+         0     0% 98.31%     5.91ms  1.22%  github.com/containerd/containerd/v2/core/metrics/cgroups/v2.(*Collector).collect
+         0     0% 98.31%    28.50ms  5.88%  github.com/containerd/ttrpc.(*Client).receiveLoop
+         0     0% 98.31%    28.48ms  5.88%  github.com/containerd/ttrpc.(*stream).receive
+         0     0% 98.31%     2.87ms  0.59%  github.com/docker/go-events.(*Broadcaster).Write
+         0     0% 98.31%     8.72ms  1.80%  github.com/docker/go-metrics.(*Namespace).Collect
+         0     0% 98.31%   397.62ms 82.08%  github.com/gin-gonic/gin.(*Context).Next
+         0     0% 98.31%   397.62ms 82.08%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0% 98.31%   397.62ms 82.08%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0% 98.31%   397.62ms 82.08%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0% 98.31%     4.59ms  0.95%  github.com/grpc-ecosystem/go-grpc-middleware/providers/prometheus.(*ServerMetrics).Collect
+         0     0% 98.31%     4.59ms  0.95%  github.com/prometheus/client_golang/prometheus.(*MetricVec).Collect
+         0     0% 98.31%    13.46ms  2.78%  github.com/prometheus/client_golang/prometheus.(*Registry).Gather.func1
+         0     0% 98.31%     4.59ms  0.95%  github.com/prometheus/client_golang/prometheus.(*metricMap).Collect
+         0     0% 98.31%   397.61ms 82.08%  github.com/prometheus/client_golang/prometheus.(*noTransactionGatherer).Gather
+         0     0% 98.31%   397.62ms 82.08%  github.com/prometheus/client_golang/prometheus/promhttp.HandlerForTransactional.func1
+         0     0% 98.31%   397.62ms 82.08%  github.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1
+         0     0% 98.31%   397.62ms 82.08%  github.com/prometheus/client_golang/prometheus/promhttp.InstrumentMetricHandler.InstrumentHandlerInFlight.func1

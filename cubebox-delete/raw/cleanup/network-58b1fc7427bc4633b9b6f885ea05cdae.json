@@ -1,0 +1,11 @@
+{
+  "persist_metadata": {
+    "gateway_ip": "169.254.68.5",
+    "host_tap_name": "z10.100.0.54",
+    "mvm_inner_ip": "169.254.68.6",
+    "sandbox_ip": "10.100.0.54",
+    "shim_req_metadata_b64": ""
+  },
+  "released": true,
+  "sandbox_id": "58b1fc7427bc4633b9b6f885ea05cdae"
+}

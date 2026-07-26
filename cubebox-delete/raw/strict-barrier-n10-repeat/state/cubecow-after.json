@@ -1,0 +1,16 @@
+{
+  "collected_at": "2026-07-25T17:40:18.843499915Z",
+  "address": "127.0.0.1:9999",
+  "request_id": "storage-metrics-1785001218842470219",
+  "response_request_id": "storage-metrics-1785001218842470219",
+  "node_id": "192.168.43.8",
+  "timestamp_unix_nano": 1785001218843299286,
+  "ret_code": 200,
+  "ret_message": "",
+  "metrics": {
+    "snapshot_count": 3,
+    "total_bytes": 10670309376,
+    "used_bytes": 3337101312,
+    "volume_count": 2
+  }
+}

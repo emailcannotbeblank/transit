@@ -1,0 +1,40 @@
+2026/07/26 01:36:04 concurrentTotal:10,cnt:1
+2026/07/26 01:36:04 Async retry max count: 100
+2026/07/26 01:36:04 doCreateSandbox RequestId:51c10158-ebef-4519-abad-c431ab7b428f,sandBoxId:396eeb242cb041528a213e9a8978e711,Ip:10.100.0.62,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:121
+2026/07/26 01:36:04 doCreateSandbox RequestId:c68bd283-28f3-47b7-92c9-bf27773c9826,sandBoxId:662d2d92c1874b349644fab0e1168081,Ip:10.100.0.56,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:130
+2026/07/26 01:36:04 doCreateSandbox RequestId:3efac1a3-f9f1-4a07-a4cd-f4b7c886966f,sandBoxId:5b6bfc4eb34e4cd8a61d3d8a6da22404,Ip:10.100.0.60,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:140
+2026/07/26 01:36:04 doCreateSandbox RequestId:618834ff-6bd0-4583-9400-b04f48a2f2a6,sandBoxId:0056dcca4ae04e8983d9675d091c96ed,Ip:10.100.0.58,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:142
+2026/07/26 01:36:04 doCreateSandbox RequestId:e3a48214-bef6-4309-9bd0-9c14f7c96be1,sandBoxId:10adc043b76b4bcbade2dbcb4df1b4ff,Ip:10.100.0.63,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:145
+2026/07/26 01:36:04 doCreateSandbox RequestId:8302e2af-5704-41bf-8b7b-46af19408353,sandBoxId:9427909893b24c40bf52b86b5bdfca6a,Ip:10.100.0.65,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:144
+2026/07/26 01:36:04 doCreateSandbox RequestId:6e402cc4-4483-43a5-a6cc-6b956f70ab68,sandBoxId:6265f77de8754bb9b32164e345b080b3,Ip:10.100.0.64,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:147
+2026/07/26 01:36:04 doCreateSandbox RequestId:cce44ba1-68c8-4c8d-8853-a0f806389f62,sandBoxId:01262bfa15664b68b6cdf73336e79ff2,Ip:10.100.0.57,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:156
+2026/07/26 01:36:04 doCreateSandbox RequestId:81eb8315-de38-4474-8934-e29ed1c962ba,sandBoxId:2b027102fac04e18a9c3870deac47c51,Ip:10.100.0.59,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:156
+2026/07/26 01:36:04 doCreateSandbox RequestId:39dadcfb-70fa-4c5b-a435-2f218510f524,sandBoxId:f5c9a4a999fc4ec484593a888e538744,Ip:10.100.0.61,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:173
+2026/07/26 01:36:04 doDestroySandbox RequestId:10847442-9b24-49df-ab8d-c6345f5ddaee,sandBoxId:396eeb242cb041528a213e9a8978e711, code:200, message:Success,cost:101
+2026/07/26 01:36:04 doDestroySandbox RequestId:151d580a-de37-4286-bf3d-8a7b87c606a8,sandBoxId:10adc043b76b4bcbade2dbcb4df1b4ff, code:200, message:Success,cost:117
+2026/07/26 01:36:04 doDestroySandbox RequestId:bc26cf61-ab6a-4c5a-8573-7d1e34f95faf,sandBoxId:f5c9a4a999fc4ec484593a888e538744, code:200, message:Success,cost:94
+2026/07/26 01:36:04 doDestroySandbox RequestId:7a8198bc-e478-4433-8cff-db88c091db61,sandBoxId:5b6bfc4eb34e4cd8a61d3d8a6da22404, code:200, message:Success,cost:126
+2026/07/26 01:36:04 doDestroySandbox RequestId:255297d1-b1df-4967-ba9f-e589ffb942c6,sandBoxId:9427909893b24c40bf52b86b5bdfca6a, code:200, message:Success,cost:124
+2026/07/26 01:36:04 doDestroySandbox RequestId:d62e6911-0b99-466a-a6e7-5576c2847e04,sandBoxId:662d2d92c1874b349644fab0e1168081, code:200, message:Success,cost:139
+2026/07/26 01:36:04 doDestroySandbox RequestId:55a653b8-b3d1-4a25-92b9-c097eb48534d,sandBoxId:6265f77de8754bb9b32164e345b080b3, code:200, message:Success,cost:122
+2026/07/26 01:36:04 doDestroySandbox RequestId:29dc3e4e-71e7-4439-8386-5941ffe8b4dc,sandBoxId:01262bfa15664b68b6cdf73336e79ff2, code:200, message:Success,cost:120
+2026/07/26 01:36:04 doDestroySandbox RequestId:77f506df-ecd7-4f10-989e-8bbe1531504d,sandBoxId:0056dcca4ae04e8983d9675d091c96ed, code:200, message:Success,cost:134
+2026/07/26 01:36:04 doDestroySandbox RequestId:95f0d7cc-7f46-4c17-b005-64fcda502dce,sandBoxId:2b027102fac04e18a9c3870deac47c51, code:200, message:Success,cost:119
+2026/07/26 01:36:04 totalRunSuccCnt:10
+2026/07/26 01:36:04 totalRunErr:0
+2026/07/26 01:36:04 runMetric:
+2026/07/26 01:36:04 clientReqCost:[min:121	max:173	p5:121	p50:144	p80:156	p99:173	]
+2026/07/26 01:36:04 clientReqCost:[121 130 140 142 144 145 147 156 156 173]
+2026/07/26 01:36:04 sandbox-probe:[min:22	max:35	p5:22	p50:29	p80:33	p99:35	]
+2026/07/26 01:36:04 sandbox-probe:[22 24 24 25 28 31 33 33 33 35]
+2026/07/26 01:36:04 all-probe:[min:22	max:35	p5:22	p50:29	p80:33	p99:35	]
+2026/07/26 01:36:04 all-probe:[22 24 24 25 28 31 33 33 33 35]
+2026/07/26 01:36:04 cube.master.components.envd.version:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:36:04 cube.master.components.envd.version:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:36:04 cube-e2e:[min:118	max:171	p5:118	p50:141	p80:153	p99:171	]
+2026/07/26 01:36:04 cube-e2e:[118 127 138 139 141 141 143 153 153 171]
+2026/07/26 01:36:04 totalDelSuccCnt:10
+2026/07/26 01:36:04 totalDelErr:0
+2026/07/26 01:36:04 removeMetric:
+2026/07/26 01:36:04 clientReqCost:[min:94	max:139	p5:94	p50:121	p80:132	p99:139	]
+2026/07/26 01:36:04 clientReqCost:[94 94 101 101 117 117 119 119 120 120 122 122 124 124 126 126 134 134 139 139]

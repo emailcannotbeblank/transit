@@ -1,0 +1,38 @@
+File: cubelet
+Build ID: 59992bdcb60a933437a4817bc2f015e341c72434
+Type: cpu
+Time: Jul 26, 2026 at 1:29am (HKT)
+Duration: 8.15s, Total samples = 1.59s (19.51%)
+Showing nodes accounting for 1.08s, 67.92% of 1.59s total
+Showing top 30 nodes out of 295
+      flat  flat%   sum%        cum   cum%
+     0.19s 11.95% 11.95%      0.19s 11.95%  internal/runtime/syscall.Syscall6
+     0.13s  8.18% 20.13%      0.16s 10.06%  github.com/cespare/xxhash/v2.(*Digest).Write
+     0.11s  6.92% 27.04%      0.11s  6.92%  github.com/prometheus/client_model/go.(*LabelPair).GetName (inline)
+     0.05s  3.14% 30.19%      0.10s  6.29%  github.com/prometheus/client_golang/prometheus/internal.MetricSorter.Less
+     0.05s  3.14% 33.33%      0.05s  3.14%  runtime.memmove
+     0.05s  3.14% 36.48%      0.11s  6.92%  runtime.scanobject
+     0.04s  2.52% 38.99%      0.12s  7.55%  sort.partition
+     0.03s  1.89% 40.88%      0.20s 12.58%  bufio.(*Writer).WriteString
+     0.03s  1.89% 42.77%      0.03s  1.89%  github.com/prometheus/client_model/go.(*LabelPair).GetValue (inline)
+     0.03s  1.89% 44.65%      0.03s  1.89%  internal/runtime/maps.ctrlGroup.matchH2 (inline)
+     0.02s  1.26% 45.91%      0.02s  1.26%  aeshashbody
+     0.02s  1.26% 47.17%      0.38s 23.90%  github.com/prometheus/common/expfmt.MetricFamilyToText
+     0.02s  1.26% 48.43%      0.03s  1.89%  github.com/prometheus/common/model.ValidationScheme.IsValidMetricName
+     0.02s  1.26% 49.69%      0.06s  3.77%  github.com/prometheus/common/model.metricNeedsEscaping
+     0.02s  1.26% 50.94%      0.02s  1.26%  runtime.cmpstring
+     0.02s  1.26% 52.20%      0.05s  3.14%  runtime.findObject
+     0.02s  1.26% 53.46%      0.04s  2.52%  runtime.lock2
+     0.02s  1.26% 54.72%      0.11s  6.92%  runtime.mallocgc
+     0.02s  1.26% 55.97%      0.04s  2.52%  runtime.mapaccess2_fast64
+     0.02s  1.26% 57.23%      0.02s  1.26%  runtime.memclrNoHeapPointers
+     0.02s  1.26% 58.49%      0.02s  1.26%  runtime.nanotime
+     0.02s  1.26% 59.75%      0.02s  1.26%  runtime.nextFreeFast (inline)
+     0.02s  1.26% 61.01%      0.02s  1.26%  runtime.procyield
+     0.02s  1.26% 62.26%      0.02s  1.26%  runtime.spanOf (inline)
+     0.02s  1.26% 63.52%      0.03s  1.89%  runtime.stealWork
+     0.02s  1.26% 64.78%      0.02s  1.26%  runtime.unlock2
+     0.02s  1.26% 66.04%      0.02s  1.26%  unicode/utf8.ValidString
+     0.01s  0.63% 66.67%      0.01s  0.63%  bufio.(*Writer).Available (inline)
+     0.01s  0.63% 67.30%      0.01s  0.63%  encoding/binary.littleEndian.Uint64 (inline)
+     0.01s  0.63% 67.92%      0.01s  0.63%  fmt.(*readRune).ReadRune

@@ -1,0 +1,91 @@
+{
+  "unit": "ms",
+  "template_id": "tpl-c33298206d4846deac922031",
+  "concurrency": 10,
+  "strict_semantics": "all creates complete, settle 1s, all delete workers wait on one barrier",
+  "runs": [
+    {
+      "name": "strict-barrier-n10",
+      "observability": "full, Prometheus interval 20ms",
+      "success": "10/10",
+      "residual_count": 0,
+      "destroy": {
+        "mean": 102.58,
+        "p50": 105.745,
+        "p95": 114.184,
+        "p99": 114.363,
+        "max": 114.408,
+        "wall": 115.949,
+        "worker_start_skew": 3.46
+      },
+      "breakdown_mean": {
+        "cubelet_service": 95.441,
+        "master_api_tail_approx": 7.139,
+        "runtime_cubebox": 93.399,
+        "resource_phase_max": 1.1,
+        "storage": 0.8,
+        "network": 0.8,
+        "shim_kill": 11.776,
+        "shim_wait_task": 30.966,
+        "shim_shutdown": 45.395,
+        "shim_guest_destroy_rpc_approx": 1.424,
+        "shim_wait_vm_shutdown": 21.126,
+        "shim_vmm_join": 22.829
+      }
+    },
+    {
+      "name": "strict-barrier-baseline-n10",
+      "observability": "client lifecycle only",
+      "success": "10/10",
+      "residual_count": 0,
+      "destroy": {
+        "mean": 129.455,
+        "p50": 129.705,
+        "p95": 132.344,
+        "p99": 132.457,
+        "max": 132.485,
+        "wall": 134.268,
+        "worker_start_skew": 3.46
+      }
+    },
+    {
+      "name": "strict-barrier-n10-repeat",
+      "observability": "full, Prometheus interval 100ms",
+      "success": "10/10",
+      "residual_count": 0,
+      "destroy": {
+        "mean": 126.907,
+        "p50": 127.51,
+        "p95": 129.637,
+        "p99": 129.94,
+        "max": 130.016,
+        "wall": 131.486,
+        "worker_start_skew": 3.708
+      },
+      "breakdown_mean": {
+        "cubelet_service": 118.836,
+        "master_api_tail_approx": 8.071,
+        "runtime_cubebox": 114.711,
+        "resource_phase_max": 3.358,
+        "storage": 2.644,
+        "network": 3.058,
+        "shim_kill": 13.992,
+        "shim_wait_task": 21.145,
+        "shim_shutdown": 63.812,
+        "shim_guest_destroy_rpc_approx": 0.91,
+        "shim_wait_vm_shutdown": 36.924,
+        "shim_vmm_join": 25.958
+      }
+    }
+  ],
+  "final_consistency": {
+    "cubeapi_sandbox_count": 0,
+    "cubemaster_sandbox_count": 0,
+    "cubelet_sandbox_count": 0,
+    "strict_run_redis_proxy_keys_present": 0,
+    "network_agent_state_file_count": 0,
+    "sandbox_process_count": 0,
+    "cubecow_snapshot_count": 3,
+    "cubecow_volume_count": 2
+  }
+}

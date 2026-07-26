@@ -1,0 +1,38 @@
+File: cubelet
+Build ID: 59992bdcb60a933437a4817bc2f015e341c72434
+Type: cpu
+Time: Jul 26, 2026 at 1:40am (HKT)
+Duration: 8s, Total samples = 430ms ( 5.37%)
+Showing nodes accounting for 180ms, 41.86% of 430ms total
+Showing top 30 nodes out of 215
+      flat  flat%   sum%        cum   cum%
+         0     0%     0%      260ms 60.47%  github.com/gin-gonic/gin.(*Context).Next
+         0     0%     0%      260ms 60.47%  github.com/gin-gonic/gin.(*Engine).ServeHTTP
+         0     0%     0%      260ms 60.47%  github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+         0     0%     0%      260ms 60.47%  github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+         0     0%     0%      260ms 60.47%  github.com/prometheus/client_golang/prometheus/promhttp.HandlerForTransactional.func1
+         0     0%     0%      260ms 60.47%  github.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1
+         0     0%     0%      260ms 60.47%  github.com/prometheus/client_golang/prometheus/promhttp.InstrumentMetricHandler.InstrumentHandlerInFlight.func1
+         0     0%     0%      260ms 60.47%  github.com/tencentcloud/CubeSandbox/Cubelet/services/server.(*Server).ServeHttp.func1
+         0     0%     0%      260ms 60.47%  net/http.(*conn).serve
+         0     0%     0%      260ms 60.47%  net/http.HandlerFunc.ServeHTTP
+         0     0%     0%      260ms 60.47%  net/http.serverHandler.ServeHTTP
+      10ms  2.33%  2.33%      160ms 37.21%  github.com/prometheus/client_golang/prometheus.(*Registry).Gather
+         0     0%  2.33%      160ms 37.21%  github.com/prometheus/client_golang/prometheus.(*noTransactionGatherer).Gather
+         0     0%  2.33%      100ms 23.26%  github.com/prometheus/common/expfmt.NewEncoder.func7
+         0     0%  2.33%      100ms 23.26%  github.com/prometheus/common/expfmt.encoderCloser.Encode
+      10ms  2.33%  4.65%       90ms 20.93%  github.com/prometheus/common/expfmt.MetricFamilyToText
+         0     0%  4.65%       80ms 18.60%  github.com/prometheus/client_golang/prometheus/internal.NormalizeMetricFamilies
+      80ms 18.60% 23.26%       80ms 18.60%  internal/runtime/syscall.Syscall6
+         0     0% 23.26%       80ms 18.60%  sort.Sort
+         0     0% 23.26%       80ms 18.60%  sort.pdqsort
+      20ms  4.65% 27.91%       70ms 16.28%  github.com/prometheus/client_golang/prometheus/internal.MetricSorter.Less
+         0     0% 27.91%       70ms 16.28%  github.com/prometheus/common/expfmt.writeNameAndLabelPairs
+         0     0% 27.91%       70ms 16.28%  github.com/prometheus/common/expfmt.writeSample
+         0     0% 27.91%       70ms 16.28%  syscall.RawSyscall6
+         0     0% 27.91%       60ms 13.95%  github.com/prometheus/client_golang/prometheus.processMetric
+      10ms  2.33% 30.23%       60ms 13.95%  sort.partition
+         0     0% 30.23%       50ms 11.63%  github.com/containerd/containerd/v2/core/metrics/cgroups/v2.(*Collector).collect
+         0     0% 30.23%       50ms 11.63%  github.com/prometheus/client_golang/prometheus.(*Registry).Gather.func1
+      50ms 11.63% 41.86%       50ms 11.63%  github.com/prometheus/client_model/go.(*LabelPair).GetValue (inline)
+         0     0% 41.86%       50ms 11.63%  internal/poll.ignoringEINTRIO (inline)

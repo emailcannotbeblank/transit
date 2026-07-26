@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-07-25T17:31:37.446828+00:00",
+  "config": {
+    "template": "tpl-c33298206d4846deac922031",
+    "api_url": "http://127.0.0.1:3000",
+    "concurrency": 10,
+    "total": 10,
+    "warmup": 0,
+    "mode": "create-delete"
+  },
+  "summary": {
+    "total_time_s": 0.246,
+    "successful": 10,
+    "errors": 0,
+    "success_rate": 1.0,
+    "throughput_qps": 40.595
+  },
+  "create": {
+    "count": 10,
+    "min": 82.73,
+    "max": 141.19,
+    "avg": 109.66,
+    "std": 15.43,
+    "p50": 110.66,
+    "p90": 115.91,
+    "p95": 141.19,
+    "p99": 141.19
+  },
+  "delete": {
+    "count": 10,
+    "min": 80.44,
+    "max": 110.45,
+    "avg": 94.94,
+    "std": 9.85,
+    "p50": 95.22,
+    "p90": 105.77,
+    "p95": 110.45,
+    "p99": 110.45
+  },
+  "raw": [
+    {
+      "seq": 10,
+      "create_ms": 90.45,
+      "delete_ms": 81.02,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "create_ms": 82.73,
+      "delete_ms": 102.38,
+      "error": null
+    },
+    {
+      "seq": 1,
+      "create_ms": 110.31,
+      "delete_ms": 87.62,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "create_ms": 110.93,
+      "delete_ms": 95.22,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "create_ms": 112.18,
+      "delete_ms": 94.8,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "create_ms": 110.37,
+      "delete_ms": 96.37,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "create_ms": 111.86,
+      "delete_ms": 95.33,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "create_ms": 110.66,
+      "delete_ms": 110.45,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "create_ms": 115.91,
+      "delete_ms": 105.77,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "create_ms": 141.19,
+      "delete_ms": 80.44,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+ M deploy/one-click/cubeproxy/docker-compose.yaml.template
+ M deploy/one-click/scripts/one-click/up-cube-proxy.sh
+fix/add-missing-timeout-field
+v0.5.1-88-g1528ba4-dirty
+1528ba4a0335724fa857b7e008da6d4e7f61c02e

@@ -1,0 +1,109 @@
+2026/07/26 01:37:17 Args:&[configs/cubelet_request.json]
+2026/07/26 01:37:18 RunContainer RequestId:f3486fb0-cf60-4136-b14b-64306b38dbe9,sandBoxId:97be471aafcf4fefa23701e25e8fc701,Ip:10.100.0.75,code:200, message:,cost:150
+2026/07/26 01:37:18 RunContainer RequestId:d40b8aad-4014-4c36-a7f9-30814c06ee7f,sandBoxId:b39fe15eae23483c850f6e04f696a557,Ip:10.100.0.77,code:200, message:,cost:154
+2026/07/26 01:37:18 RunContainer RequestId:f11df9ce-f29d-4673-b166-409fc40c3653,sandBoxId:40d2b94ebf124380b0b8936213414ec6,Ip:10.100.0.73,code:200, message:,cost:156
+2026/07/26 01:37:18 RunContainer RequestId:2e7c4d22-bb29-48a3-a855-fe2869d4fc8c,sandBoxId:6937bf87fe6b4fae8864a56ab94d6758,Ip:10.100.0.69,code:200, message:,cost:156
+2026/07/26 01:37:18 RunContainer RequestId:42d3af0b-01e8-42d6-a82b-884c1579036b,sandBoxId:61cc8dbac66f472a81a6b5d05d972d98,Ip:10.100.0.70,code:200, message:,cost:160
+2026/07/26 01:37:18 RunContainer RequestId:4a50ab1f-78a2-4877-ba0c-783999833039,sandBoxId:10606ada1bb1401e82e74fa91507025c,Ip:10.100.0.72,code:200, message:,cost:160
+2026/07/26 01:37:18 RunContainer RequestId:920c2b1b-4147-4120-984c-8523f9701137,sandBoxId:f960628c51f948c0ab814fb298d747bf,Ip:10.100.0.74,code:200, message:,cost:174
+2026/07/26 01:37:18 RunContainer RequestId:99eb8332-e486-45f5-9712-7c611facf0b2,sandBoxId:0c4a15282abd43649d13e369baf89e3a,Ip:10.100.0.76,code:200, message:,cost:177
+2026/07/26 01:37:18 RunContainer RequestId:89c9eaf2-d44d-4e75-a455-b20a4d5431b3,sandBoxId:bc4aeb78bb30418cb81f4851a1bd3bba,Ip:10.100.0.71,code:200, message:,cost:179
+2026/07/26 01:37:18 RunContainer RequestId:0f573553-f11b-4db9-b9a7-30de74974e50,sandBoxId:426034fd87414832a1911d40651c55f1,Ip:10.100.0.68,code:200, message:,cost:179
+2026/07/26 01:37:18 Remove ContainerRequestId:4d1dfdb9-d32e-4594-acbf-435215246d16,sandBoxId:b39fe15eae23483c850f6e04f696a557, code:200, message:,cost:81
+2026/07/26 01:37:18 Remove ContainerRequestId:e11198c6-177e-43d9-a40c-7d94581ce9fa,sandBoxId:10606ada1bb1401e82e74fa91507025c, code:200, message:,cost:84
+2026/07/26 01:37:18 Remove ContainerRequestId:4bfdd54a-58cd-4e97-baec-fdd627ce1bcf,sandBoxId:40d2b94ebf124380b0b8936213414ec6, code:200, message:,cost:88
+2026/07/26 01:37:18 Remove ContainerRequestId:31aa31ca-aa47-4113-a3d7-869fc3870874,sandBoxId:61cc8dbac66f472a81a6b5d05d972d98, code:200, message:,cost:92
+2026/07/26 01:37:18 Remove ContainerRequestId:a88c31a9-302c-43cd-8815-52aa3333b473,sandBoxId:bc4aeb78bb30418cb81f4851a1bd3bba, code:200, message:,cost:73
+2026/07/26 01:37:18 Remove ContainerRequestId:bc05e551-dc5f-488c-8621-17fa6f839ad1,sandBoxId:6937bf87fe6b4fae8864a56ab94d6758, code:200, message:,cost:96
+2026/07/26 01:37:18 Remove ContainerRequestId:8b0cef81-08b3-4650-bf9f-179b2de5af7b,sandBoxId:97be471aafcf4fefa23701e25e8fc701, code:200, message:,cost:101
+2026/07/26 01:37:18 Remove ContainerRequestId:4118fa52-02d6-4b44-a9f0-ad5ed947dd4b,sandBoxId:f960628c51f948c0ab814fb298d747bf, code:200, message:,cost:87
+2026/07/26 01:37:18 Remove ContainerRequestId:1dba8056-a6e3-43ca-837b-64d4a3ba67f9,sandBoxId:0c4a15282abd43649d13e369baf89e3a, code:200, message:,cost:84
+2026/07/26 01:37:18 Remove ContainerRequestId:b0dffe52-d2e4-41bb-90b0-490754f9ce0a,sandBoxId:426034fd87414832a1911d40651c55f1, code:200, message:,cost:111
+2026/07/26 01:37:18 totalRunSuccCnt:10
+2026/07/26 01:37:18 totalRunErr:0
+2026/07/26 01:37:18 runMetric:
+2026/07/26 01:37:18 storage:[min:33	max:33	p5:33	p50:33	p80:33	p99:33	]
+2026/07/26 01:37:18 storage:[33 33 33 33 33 33 33 33 33 33]
+2026/07/26 01:37:18 workflow-limiter:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 workflow-limiter:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 volume:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 volume:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cubebox:[min:74	max:104	p5:74	p50:84	p80:102	p99:104	]
+2026/07/26 01:37:18 cubebox:[74 78 81 81 84 85 98 102 103 104]
+2026/07/26 01:37:18 cube-sandbox-store:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 cube-sandbox-store:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cubebox-service-inner:[min:75	max:114	p5:75	p50:90	p80:110	p99:114	]
+2026/07/26 01:37:18 cubebox-service-inner:[75 80 86 89 90 91 102 110 111 114]
+2026/07/26 01:37:18 create-sandbox-metadata:[min:0	max:1	p5:0	p50:0	p80:1	p99:1	]
+2026/07/26 01:37:18 create-sandbox-metadata:[0 0 0 0 0 0 0 1 1 1]
+2026/07/26 01:37:18 gen-spec-sandbox:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 gen-spec-sandbox:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 sandbox-start:[min:40	max:79	p5:40	p50:55	p80:75	p99:79	]
+2026/07/26 01:37:18 sandbox-start:[40 45 51 53 55 56 66 75 76 79]
+2026/07/26 01:37:18 appsnapshot:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 appsnapshot:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cgroup:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 cgroup:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cube-storage-db:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 cube-storage-db:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 workflow:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 workflow:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cubebox-service:[min:108	max:137	p5:108	p50:118	p80:136	p99:137	]
+2026/07/26 01:37:18 cubebox-service:[108 112 114 115 118 118 132 136 137 137]
+2026/07/26 01:37:18 clientReqCost:[min:150	max:179	p5:150	p50:160	p80:178	p99:179	]
+2026/07/26 01:37:18 clientReqCost:[150 154 156 156 160 160 174 177 179 179]
+2026/07/26 01:37:18 cubebox-inner:[min:-74	max:-36	p5:-74	p50:-51	p80:-40	p99:-36	]
+2026/07/26 01:37:18 cubebox-inner:[-74 -71 -70 -63 -53 -50 -48 -43 -40 -36]
+2026/07/26 01:37:18 sandbox-probe:[min:20	max:39	p5:20	p50:27	p80:32	p99:39	]
+2026/07/26 01:37:18 sandbox-probe:[20 21 23 26 27 27 27 28 34 39]
+2026/07/26 01:37:18 network:[min:1	max:2	p5:1	p50:1	p80:2	p99:2	]
+2026/07/26 01:37:18 network:[1 1 1 1 1 1 2 2 2 2]
+2026/07/26 01:37:18 images:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 images:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 netfile:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 netfile:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 sandbox-create:[min:37	max:75	p5:37	p50:53	p80:72	p99:75	]
+2026/07/26 01:37:18 sandbox-create:[37 42 44 50 51 55 65 71 73 75]
+2026/07/26 01:37:18 createid:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 createid:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 totalDelSuccCnt:10
+2026/07/26 01:37:18 totalDelErr:0
+2026/07/26 01:37:18 removeMetric:
+2026/07/26 01:37:18 cubebox:[min:69	max:97	p5:69	p50:83	p80:92	p99:97	]
+2026/07/26 01:37:18 cubebox:[69 71 78 79 81 85 85 88 93 97]
+2026/07/26 01:37:18 cleanup:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 cleanup:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cube-storage-db-unknown-container:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 cube-storage-db-unknown-container:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 volume:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 volume:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 images:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 images:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 network:[min:0	max:2	p5:0	p50:1	p80:1	p99:2	]
+2026/07/26 01:37:18 network:[0 0 0 1 1 1 1 1 2 2]
+2026/07/26 01:37:18 cubebox-service-inner:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 cubebox-service-inner:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 clientReqCost:[min:73	max:111	p5:73	p50:87	p80:100	p99:111	]
+2026/07/26 01:37:18 clientReqCost:[73 81 84 84 87 88 92 96 101 111]
+2026/07/26 01:37:18 cubebox-service-unknown-container:[min:71	max:100	p5:71	p50:84	p80:94	p99:100	]
+2026/07/26 01:37:18 cubebox-service-unknown-container:[71 73 81 82 83 86 88 90 95 100]
+2026/07/26 01:37:18 sandbox-del-container:[min:69	max:97	p5:69	p50:82	p80:91	p99:97	]
+2026/07/26 01:37:18 sandbox-del-container:[69 71 78 79 80 84 85 85 93 97]
+2026/07/26 01:37:18 del-sandbox-metadata:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 del-sandbox-metadata:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cgroup:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 cgroup:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 workflow:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 workflow:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 del-task-sandbox:[min:69	max:97	p5:69	p50:82	p80:91	p99:97	]
+2026/07/26 01:37:18 del-task-sandbox:[69 70 78 79 80 84 85 85 93 97]
+2026/07/26 01:37:18 netfile:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 netfile:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cube-sandbox-store:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 cube-sandbox-store:[0 0 0 0 0 0 0 0 0 0]
+2026/07/26 01:37:18 cubebox-inner:[min:0	max:2	p5:0	p50:0	p80:0	p99:2	]
+2026/07/26 01:37:18 cubebox-inner:[0 0 0 0 0 0 0 0 0 2]
+2026/07/26 01:37:18 storage:[min:0	max:2	p5:0	p50:1	p80:1	p99:2	]
+2026/07/26 01:37:18 storage:[0 0 0 0 1 1 1 1 2 2]
+2026/07/26 01:37:18 workflow-limiter:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:37:18 workflow-limiter:[0 0 0 0 0 0 0 0 0 0]

@@ -1,0 +1,2 @@
+CubeAPI: {"status":"ok","sandboxes":0}
+CubeMaster: {"ret":{"ret_code":200,"ret_msg":"Success"}}

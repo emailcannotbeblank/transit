@@ -1,0 +1,24 @@
+[create 006] OK      86.575 ms 5ba9f7e1a34d4418833ac1b9fbf588ee
+[create 001] OK      88.290 ms 121d437f9046400db61841bbc18836a9
+[create 010] OK      93.083 ms 2664ffd898c048dcb795e1376be1e8ce
+[create 005] OK      93.789 ms 4f356d78214a48b1864ef06f9dedb3f3
+[create 008] OK      93.964 ms 9a01a8edd216442ab6916a588c139686
+[create 002] OK     105.177 ms 5d476205a3164667b68e300e14c4fe6b
+[create 004] OK     105.335 ms f5a5378efdd94499b00575786505b646
+[create 007] OK     106.067 ms 98be82d0fe7e4386803cffa880082819
+[create 003] OK     106.303 ms fe0cd540a5764d4f9cdf61648f46e922
+[create 009] OK     106.895 ms a6054bffff03476cb9e55a943072c2d7
+all creates returned; settling for 1.000s
+[destroy 006] OK     123.143 ms 5ba9f7e1a34d4418833ac1b9fbf588ee
+[destroy 008] OK     126.652 ms 9a01a8edd216442ab6916a588c139686
+[destroy 010] OK     128.643 ms 2664ffd898c048dcb795e1376be1e8ce
+[destroy 007] OK     129.188 ms 98be82d0fe7e4386803cffa880082819
+[destroy 009] OK     128.619 ms a6054bffff03476cb9e55a943072c2d7
+[destroy 003] OK     130.222 ms fe0cd540a5764d4f9cdf61648f46e922
+[destroy 001] OK     132.485 ms 121d437f9046400db61841bbc18836a9
+[destroy 005] OK     131.767 ms 4f356d78214a48b1864ef06f9dedb3f3
+[destroy 002] OK     131.659 ms 5d476205a3164667b68e300e14c4fe6b
+[destroy 004] OK     132.172 ms f5a5378efdd94499b00575786505b646
+report: /home/zry/桌面/0702/0725/raw/strict-barrier-baseline-n10/lifecycle.json
+result: create=10/10, destroy=10/10, residual=0
+

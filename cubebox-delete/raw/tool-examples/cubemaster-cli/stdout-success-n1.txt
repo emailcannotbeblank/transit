@@ -1,0 +1,22 @@
+2026/07/26 01:35:28 concurrentTotal:1,cnt:1
+2026/07/26 01:35:28 Async retry max count: 100
+2026/07/26 01:35:28 doCreateSandbox RequestId:fa93fd5d-729c-41f0-b40c-6e6bcbde7bb0,sandBoxId:d4d77266ce9b43e0a6327537594046b9,Ip:10.100.0.55,HostID:192.168.43.8,HostIP:192.168.43.8,code:200, message:,cost:92
+2026/07/26 01:35:28 doDestroySandbox RequestId:99122870-3087-4055-a27e-c55960bc8183,sandBoxId:d4d77266ce9b43e0a6327537594046b9, code:200, message:Success,cost:73
+2026/07/26 01:35:28 totalRunSuccCnt:1
+2026/07/26 01:35:28 totalRunErr:0
+2026/07/26 01:35:28 runMetric:
+2026/07/26 01:35:28 sandbox-probe:[min:24	max:24	p5:24	p50:24	p80:24	p99:24	]
+2026/07/26 01:35:28 sandbox-probe:[24]
+2026/07/26 01:35:28 clientReqCost:[min:92	max:92	p5:92	p50:92	p80:92	p99:92	]
+2026/07/26 01:35:28 clientReqCost:[92]
+2026/07/26 01:35:28 all-probe:[min:24	max:24	p5:24	p50:24	p80:24	p99:24	]
+2026/07/26 01:35:28 all-probe:[24]
+2026/07/26 01:35:28 cube.master.components.envd.version:[min:0	max:0	p5:0	p50:0	p80:0	p99:0	]
+2026/07/26 01:35:28 cube.master.components.envd.version:[0]
+2026/07/26 01:35:28 cube-e2e:[min:90	max:90	p5:90	p50:90	p80:90	p99:90	]
+2026/07/26 01:35:28 cube-e2e:[90]
+2026/07/26 01:35:28 totalDelSuccCnt:1
+2026/07/26 01:35:28 totalDelErr:0
+2026/07/26 01:35:28 removeMetric:
+2026/07/26 01:35:28 clientReqCost:[min:73	max:74	p5:73	p50:73	p80:74	p99:74	]
+2026/07/26 01:35:28 clientReqCost:[73 74]

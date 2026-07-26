@@ -1,0 +1,791 @@
+goroutine 406 [running]:
+runtime/pprof.writeGoroutineStacks({0x307ee80, 0xc0008120e0})
+	/usr/local/go/src/runtime/pprof/pprof.go:764 +0x6a
+runtime/pprof.writeGoroutine({0x307ee80?, 0xc0008120e0?}, 0x68?)
+	/usr/local/go/src/runtime/pprof/pprof.go:753 +0x25
+runtime/pprof.(*Profile).WriteTo(0x46a9e10?, {0x307ee80?, 0xc0008120e0?}, 0xc?)
+	/usr/local/go/src/runtime/pprof/pprof.go:377 +0x14b
+net/http/pprof.handler.ServeHTTP({0xc001de0f11, 0x9}, {0x3090830, 0xc0008120e0}, 0xc001019400)
+	/usr/local/go/src/net/http/pprof/pprof.go:272 +0x52f
+net/http/pprof.Index({0x3090830, 0xc0008120e0}, 0xc001019400?)
+	/usr/local/go/src/net/http/pprof/pprof.go:389 +0xde
+net/http.HandlerFunc.ServeHTTP(0xc0004c8e40?, {0x3090830?, 0xc0008120e0?}, 0x941d36?)
+	/usr/local/go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x516bb9?, {0x3090830, 0xc0008120e0}, 0xc001019400)
+	/usr/local/go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc0006a1ad0?}, {0x3090830?, 0xc0008120e0?}, 0x1?)
+	/usr/local/go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00147b050, {0x30a3858, 0xc001f98780})
+	/usr/local/go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 94
+	/usr/local/go/src/net/http/server.go:3454 +0x485
+
+goroutine 1 [chan receive, 18 minutes]:
+main.App.func1(0xc000790640)
+	/workspace/Cubelet/cmd/cubelet/main.go:517 +0x201d
+github.com/urfave/cli/v2.(*Command).Run(0xc00078c6e0, 0xc000790640, {0xc000050050, 0x5, 0x5})
+	/home/builder/go/pkg/mod/github.com/urfave/cli/v2@v2.27.7/command.go:276 +0x7be
+github.com/urfave/cli/v2.(*App).RunContext(0xc0004d2200, {0x30a34d8, 0x47b8320}, {0xc000050050, 0x5, 0x5})
+	/home/builder/go/pkg/mod/github.com/urfave/cli/v2@v2.27.7/app.go:333 +0x5a5
+github.com/urfave/cli/v2.(*App).Run(...)
+	/home/builder/go/pkg/mod/github.com/urfave/cli/v2@v2.27.7/app.go:307
+main.main()
+	/workspace/Cubelet/cmd/cubelet/main.go:103 +0x33c
+
+goroutine 34 [chan receive, 18 minutes]:
+github.com/tencentcloud/CubeSandbox/cubelog.flushLog(0x0?)
+	/workspace/cubelog/logger.go:347 +0xb1
+created by github.com/tencentcloud/CubeSandbox/cubelog.init.3 in goroutine 1
+	/workspace/cubelog/logger.go:88 +0x30
+
+goroutine 35 [chan receive]:
+github.com/tencentcloud/CubeSandbox/cubelog.init.5.func1()
+	/workspace/cubelog/time.go:28 +0x5a
+created by github.com/tencentcloud/CubeSandbox/cubelog.init.5 in goroutine 1
+	/workspace/cubelog/time.go:22 +0x13b
+
+goroutine 51 [IO wait, 18 minutes]:
+internal/poll.runtime_pollWait(0x7314782597e0, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc00027a0c0?, 0xc000647e53?, 0x1)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc00027a0c0, {0xc000647e53, 0x10000, 0x10000})
+	/usr/local/go/src/internal/poll/fd_unix.go:165 +0x27a
+os.(*File).read(...)
+	/usr/local/go/src/os/file_posix.go:29
+os.(*File).Read(0xc00079c358, {0xc000647e53?, 0x0?, 0x0?})
+	/usr/local/go/src/os/file.go:124 +0x4f
+github.com/fsnotify/fsnotify.(*inotify).readEvents(0xc0007c2b40)
+	/home/builder/go/pkg/mod/github.com/fsnotify/fsnotify@v1.9.0/backend_inotify.go:357 +0xcf
+created by github.com/fsnotify/fsnotify.newBackend in goroutine 1
+	/home/builder/go/pkg/mod/github.com/fsnotify/fsnotify@v1.9.0/backend_inotify.go:155 +0x1f6
+
+goroutine 52 [select]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/hotswap.(*FileOperator).listenFile.func1()
+	/workspace/Cubelet/pkg/hotswap/file.go:126 +0x139
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRetry.WithRetry.func1.func3({0xc0004f4000?, 0x0?, 0x0?}, 0x0?)
+	/workspace/Cubelet/pkg/recov/runtime.go:61 +0x5a
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRetry.func1(...)
+	/workspace/Cubelet/pkg/recov/runtime.go:62
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRetry(0xc0006a1c50, 0xa, {0xc00079c360, 0x1, 0x1})
+	/workspace/Cubelet/pkg/recov/runtime.go:68 +0x165
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRetry in goroutine 1
+	/workspace/Cubelet/pkg/recov/runtime.go:47 +0xa5
+
+goroutine 53 [select, 18 minutes]:
+main.handleSignals.func1()
+	/workspace/Cubelet/cmd/cubelet/main_unix.go:49 +0xe9
+created by main.handleSignals in goroutine 1
+	/workspace/Cubelet/cmd/cubelet/main_unix.go:46 +0xd3
+
+goroutine 55 [syscall, 18 minutes]:
+os/signal.signal_recv()
+	/usr/local/go/src/runtime/sigqueue.go:152 +0x29
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x13
+created by os/signal.Notify.func1.1 in goroutine 1
+	/usr/local/go/src/os/signal/signal.go:152 +0x1f
+
+goroutine 94 [IO wait]:
+internal/poll.runtime_pollWait(0x731478259498, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc0011c4700?, 0x900000036?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0011c4700)
+	/usr/local/go/src/internal/poll/fd_unix.go:620 +0x295
+net.(*netFD).accept(0xc0011c4700)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29
+net.(*TCPListener).accept(0xc0011d6400)
+	/usr/local/go/src/net/tcpsock_posix.go:159 +0x1b
+net.(*TCPListener).Accept(0xc0011d6400)
+	/usr/local/go/src/net/tcpsock.go:380 +0x30
+net/http.(*Server).Serve(0xc000159a00, {0x308fe40, 0xc0011d6400})
+	/usr/local/go/src/net/http/server.go:3424 +0x30c
+net/http.Serve(...)
+	/usr/local/go/src/net/http/server.go:2932
+github.com/tencentcloud/CubeSandbox/Cubelet/services/server.(*Server).ServeDebug(0x6562736679616c72?, {0x308fe40, 0xc0011d6400})
+	/workspace/Cubelet/services/server/server.go:295 +0x170
+main.serve.func1()
+	/workspace/Cubelet/cmd/cubelet/main.go:568 +0x98
+created by main.serve in goroutine 1
+	/workspace/Cubelet/cmd/cubelet/main.go:566 +0x23e
+
+goroutine 75 [select, 6 minutes]:
+github.com/docker/go-events.(*Broadcaster).run(0xc0004766e0)
+	/home/builder/go/pkg/mod/github.com/docker/go-events@v0.0.0-20190806004212-e31b211e4f1c/broadcast.go:117 +0x145
+created by github.com/docker/go-events.NewBroadcaster in goroutine 37
+	/home/builder/go/pkg/mod/github.com/docker/go-events@v0.0.0-20190806004212-e31b211e4f1c/broadcast.go:39 +0x1b9
+
+goroutine 77 [select]:
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc0003a5000, 0x1)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:412 +0x108
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc000341080)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:575 +0x78
+google.golang.org/grpc/internal/transport.newHTTP2Client.func6()
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_client.go:470 +0xd2
+created by google.golang.org/grpc/internal/transport.newHTTP2Client in goroutine 62
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_client.go:468 +0x23d2
+
+goroutine 56 [select, 6 minutes]:
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc0003a4ec0, 0x1)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:412 +0x108
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc000340c00)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:575 +0x78
+google.golang.org/grpc/internal/transport.newHTTP2Client.func6()
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_client.go:470 +0xd2
+created by google.golang.org/grpc/internal/transport.newHTTP2Client in goroutine 31
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_client.go:468 +0x23d2
+
+goroutine 24 [select, 2 minutes]:
+github.com/containerd/containerd/v2/plugins/gc.(*gcScheduler).run(0xc001ff85a0, {0x30a3890, 0xc000796690})
+	/home/builder/go/pkg/mod/github.com/containerd/containerd/v2@v2.2.2/plugins/gc/scheduler.go:256 +0x18b
+created by github.com/containerd/containerd/v2/plugins/gc.init.1.func1 in goroutine 37
+	/home/builder/go/pkg/mod/github.com/containerd/containerd/v2@v2.2.2/plugins/gc/scheduler.go:120 +0x385
+
+goroutine 25 [sleep]:
+time.Sleep(0x2540be400)
+	/usr/local/go/src/runtime/time.go:338 +0x165
+github.com/containerd/containerd/v2/plugins/restart.(*monitor).run(0xc00012b160, 0x0?)
+	/home/builder/go/pkg/mod/github.com/containerd/containerd/v2@v2.2.2/plugins/restart/monitor.go:98 +0x39
+created by github.com/containerd/containerd/v2/plugins/restart.init.0.func1 in goroutine 37
+	/home/builder/go/pkg/mod/github.com/containerd/containerd/v2@v2.2.2/plugins/restart/monitor.go:63 +0x185
+
+goroutine 26 [select, 18 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/plugins/backup.(*Local).Run(0xc000526420, {0x30a3858, 0xc000526480})
+	/workspace/Cubelet/plugins/backup/backup.go:46 +0xcb
+created by github.com/tencentcloud/CubeSandbox/Cubelet/plugins/backup.init.0.func1 in goroutine 37
+	/workspace/Cubelet/plugins/backup/plugin.go:89 +0x516
+
+goroutine 27 [chan receive, 6 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/plugins/cube/internals/cubes.(*local).startListener(0xc000791bc0)
+	/workspace/Cubelet/plugins/cube/internals/cubes/listener.go:66 +0x4a
+created by github.com/tencentcloud/CubeSandbox/Cubelet/plugins/cube/internals/cubes.init.0.func1 in goroutine 37
+	/workspace/Cubelet/plugins/cube/internals/cubes/plugin.go:74 +0x2ab
+
+goroutine 28 [select, 18 minutes]:
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0005fb390, {0x30a3890, 0xc000476af0})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:88 +0x10c
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 37
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 29 [select, 18 minutes]:
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0005fb3c0, {0x30a3890, 0xc000476c80})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:88 +0x10c
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 37
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 30 [select, 18 minutes]:
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc0005fb3f0, {0x30a3890, 0xc000476cd0})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:88 +0x10c
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 37
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 57 [select]:
+k8s.io/apimachinery/pkg/util/wait.BackoffUntilWithContext({0x30a3e58, 0xc0007d2460}, 0xc001267f40, {0x307f100, 0xc002030180}, 0x1)
+	/home/builder/go/pkg/mod/k8s.io/apimachinery@v0.34.1/pkg/util/wait/backoff.go:267 +0x185
+k8s.io/apimachinery/pkg/util/wait.BackoffUntil(0xc0001bb340?, {0x307f100?, 0xc002030180?}, 0x70?, 0x0?)
+	/home/builder/go/pkg/mod/k8s.io/apimachinery@v0.34.1/pkg/util/wait/backoff.go:233 +0x46
+k8s.io/apimachinery/pkg/util/wait.JitterUntil(0xc00202afc0, 0x3b9aca00, 0x3fa47ae147ae147b, 0x1, 0xc0007d2460)
+	/home/builder/go/pkg/mod/k8s.io/apimachinery@v0.34.1/pkg/util/wait/backoff.go:210 +0x7f
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/cubelet.(*Cubelet).Run.func1()
+	/workspace/Cubelet/pkg/cubelet/cubelet.go:205 +0x45
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/cubelet.(*Cubelet).Run in goroutine 84
+	/workspace/Cubelet/pkg/cubelet/cubelet.go:203 +0x10f
+
+goroutine 102 [sync.Cond.Wait, 6 minutes]:
+sync.runtime_notifyListWait(0xc001fa8010, 0x2)
+	/usr/local/go/src/runtime/sema.go:597 +0x159
+sync.(*Cond).Wait(0x1000000010000?)
+	/usr/local/go/src/sync/cond.go:71 +0x85
+github.com/docker/go-events.(*Queue).next(0xc001f980c0)
+	/home/builder/go/pkg/mod/github.com/docker/go-events@v0.0.0-20190806004212-e31b211e4f1c/queue.go:103 +0x7c
+github.com/docker/go-events.(*Queue).run(0xc001f980c0)
+	/home/builder/go/pkg/mod/github.com/docker/go-events@v0.0.0-20190806004212-e31b211e4f1c/queue.go:68 +0x34
+created by github.com/docker/go-events.NewQueue in goroutine 91
+	/home/builder/go/pkg/mod/github.com/docker/go-events@v0.0.0-20190806004212-e31b211e4f1c/queue.go:29 +0x13a
+
+goroutine 33 [IO wait, 6 minutes]:
+internal/poll.runtime_pollWait(0x7314782596c8, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc000340980?, 0xc00071c000?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc000340980, {0xc00071c000, 0x8000, 0x8000})
+	/usr/local/go/src/internal/poll/fd_unix.go:165 +0x27a
+net.(*netFD).Read(0xc000340980, {0xc00071c000?, 0x330019?, 0x0?})
+	/usr/local/go/src/net/fd_posix.go:55 +0x25
+net.(*conn).Read(0xc00012b810, {0xc00071c000?, 0x517cf9?, 0xc000717d88?})
+	/usr/local/go/src/net/net.go:194 +0x45
+bufio.(*Reader).Read(0xc000689200, {0xc0000009e4, 0x9, 0x29d6700?})
+	/usr/local/go/src/bufio/bufio.go:245 +0x197
+io.ReadAtLeast({0x307ad80, 0xc000689200}, {0xc0000009e4, 0x9, 0x9}, 0x9)
+	/usr/local/go/src/io/io.go:335 +0x91
+io.ReadFull(...)
+	/usr/local/go/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc0000009e4, 0x9, 0x0?}, {0x307ad80?, 0xc000689200?})
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc0000009a0)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc0000009a0)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18
+google.golang.org/grpc/internal/transport.(*http2Client).reader(0xc00079afc8, 0xc0001bb5e0)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_client.go:1645 +0x1c6
+created by google.golang.org/grpc/internal/transport.newHTTP2Client in goroutine 31
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_client.go:412 +0x1df3
+
+goroutine 82 [chan receive]:
+github.com/tencentcloud/CubeSandbox/Cubelet/internal/cube/server/images.(*snapshotsSyncer).start.func1()
+	/workspace/Cubelet/internal/cube/server/images/snapshots.go:61 +0x65
+created by github.com/tencentcloud/CubeSandbox/Cubelet/internal/cube/server/images.(*snapshotsSyncer).start in goroutine 37
+	/workspace/Cubelet/internal/cube/server/images/snapshots.go:54 +0x71
+
+goroutine 84 [select, 18 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/cubelet.(*Cubelet).Run(0xc00082a180, 0xc000799860)
+	/workspace/Cubelet/pkg/cubelet/cubelet.go:226 +0x34f
+github.com/tencentcloud/CubeSandbox/Cubelet/plugins/controller.registerCubelet.func1.1()
+	/workspace/Cubelet/plugins/controller/cubelet_plugin.go:118 +0x28
+created by github.com/tencentcloud/CubeSandbox/Cubelet/plugins/controller.registerCubelet.func1 in goroutine 37
+	/workspace/Cubelet/plugins/controller/cubelet_plugin.go:117 +0x745
+
+goroutine 59 [select, 18 minutes]:
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc000424620, {0x30a3890, 0xc000698370})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:88 +0x10c
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 58
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 60 [select, 18 minutes]:
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc000424650, {0x30a3890, 0xc0006983c0})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:88 +0x10c
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 58
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 61 [select, 18 minutes]:
+google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run(0xc000424680, {0x30a3890, 0xc000698410})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:88 +0x10c
+created by google.golang.org/grpc/internal/grpcsync.NewCallbackSerializer in goroutine 58
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/grpcsync/callback_serializer.go:52 +0x11a
+
+goroutine 211 [select, 8 minutes]:
+google.golang.org/grpc/internal/transport.(*http2Server).keepalive(0xc000c83040)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:1183 +0x1ec
+created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 81
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:356 +0x18dd
+
+goroutine 212 [IO wait, 6 minutes]:
+internal/poll.runtime_pollWait(0x731478258ac0, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc0007c6b80?, 0xc000808000?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc0007c6b80, {0xc000808000, 0x8000, 0x8000})
+	/usr/local/go/src/internal/poll/fd_unix.go:165 +0x27a
+net.(*netFD).Read(0xc0007c6b80, {0xc000808000?, 0xc0000a4bc8?, 0x517cd9?})
+	/usr/local/go/src/net/fd_posix.go:55 +0x25
+net.(*conn).Read(0xc0011e64b8, {0xc000808000?, 0x517cf9?, 0xc000313501?})
+	/usr/local/go/src/net/net.go:194 +0x45
+bufio.(*Reader).Read(0xc001319920, {0xc001676824, 0x9, 0x54cba8?})
+	/usr/local/go/src/bufio/bufio.go:245 +0x197
+io.ReadAtLeast({0x307ad80, 0xc001319920}, {0xc001676824, 0x9, 0x9}, 0x9)
+	/usr/local/go/src/io/io.go:335 +0x91
+io.ReadFull(...)
+	/usr/local/go/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc001676824, 0x9, 0xae50dc?}, {0x307ad80?, 0xc001319920?})
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc0016767e0)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc0016767e0)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18
+google.golang.org/grpc/internal/transport.(*http2Server).HandleStreams(0xc000c83040, {0x30a3858, 0xc000823590}, 0xc0008235c0)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:644 +0x105
+google.golang.org/grpc.(*Server).serveStreams(0xc0002b7400, {0x30a34d8?, 0x47b8320?}, {0x30b1860, 0xc000c83040}, {0x30aed18?, 0xc0011e64b8?})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:1023 +0x396
+google.golang.org/grpc.(*Server).handleRawConn.func1()
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:958 +0x56
+created by google.golang.org/grpc.(*Server).handleRawConn in goroutine 81
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:957 +0x1cb
+
+goroutine 99 [IO wait]:
+internal/poll.runtime_pollWait(0x7314782595b0, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc000340c80?, 0xc00072c000?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc000340c80, {0xc00072c000, 0x8000, 0x8000})
+	/usr/local/go/src/internal/poll/fd_unix.go:165 +0x27a
+net.(*netFD).Read(0xc000340c80, {0xc00072c000?, 0x4b13b4?, 0x0?})
+	/usr/local/go/src/net/fd_posix.go:55 +0x25
+net.(*conn).Read(0xc00012b828, {0xc00072c000?, 0x517cf9?, 0xc00070fd88?})
+	/usr/local/go/src/net/net.go:194 +0x45
+bufio.(*Reader).Read(0xc000689380, {0xc000000ac4, 0x9, 0x29d6700?})
+	/usr/local/go/src/bufio/bufio.go:245 +0x197
+io.ReadAtLeast({0x307ad80, 0xc000689380}, {0xc000000ac4, 0x9, 0x9}, 0x9)
+	/usr/local/go/src/io/io.go:335 +0x91
+io.ReadFull(...)
+	/usr/local/go/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc000000ac4, 0x9, 0x0?}, {0x307ad80?, 0xc000689380?})
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc000000a80)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc000000a80)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18
+google.golang.org/grpc/internal/transport.(*http2Client).reader(0xc00079b208, 0xc0001bb7a0)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_client.go:1645 +0x1c6
+created by google.golang.org/grpc/internal/transport.newHTTP2Client in goroutine 62
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_client.go:412 +0x1df3
+
+goroutine 103 [select, 6 minutes]:
+github.com/containerd/containerd/v2/core/events/exchange.(*Exchange).Subscribe.func3()
+	/home/builder/go/pkg/mod/github.com/containerd/containerd/v2@v2.2.2/core/events/exchange/exchange.go:168 +0x10b
+created by github.com/containerd/containerd/v2/core/events/exchange.(*Exchange).Subscribe in goroutine 91
+	/home/builder/go/pkg/mod/github.com/containerd/containerd/v2@v2.2.2/core/events/exchange/exchange.go:162 +0x5b1
+
+goroutine 146 [chan receive, 18 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/queueworker.(*queue).BPop(0x732e786f62646e?)
+	/workspace/Cubelet/pkg/queueworker/queue.go:65 +0x25
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/queueworker.(*queueWorker).BPop(...)
+	/workspace/Cubelet/pkg/queueworker/worker.go:116
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/queueworker.(*queueWorker).start.func1()
+	/workspace/Cubelet/pkg/queueworker/worker.go:64 +0x36
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithWaitGroup.func1.WithRecover.1({0xc001088000?, 0x61732e6472656e69?, 0x74732e786f62646e?}, 0xc00070afd0?)
+	/workspace/Cubelet/pkg/recov/runtime.go:42 +0x5a
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRecover(...)
+	/workspace/Cubelet/pkg/recov/runtime.go:43
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithWaitGroup.func1()
+	/workspace/Cubelet/pkg/recov/runtime.go:75 +0x54
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithWaitGroup in goroutine 135
+	/workspace/Cubelet/pkg/recov/runtime.go:73 +0xab
+
+goroutine 87 [select, 4 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/storage.(*local).loopUpdateStatus(0x47920a0, {0x30a3890, 0xc000796690})
+	/workspace/Cubelet/storage/local.go:376 +0xe5
+created by github.com/tencentcloud/CubeSandbox/Cubelet/storage.(*local).init in goroutine 37
+	/workspace/Cubelet/storage/local.go:367 +0x6bc
+
+goroutine 86 [select]:
+github.com/tencentcloud/CubeSandbox/Cubelet/storage.(*local).loopReconcile(0x0?, {0x30a3890, 0xc000796690})
+	/workspace/Cubelet/storage/reconcile.go:35 +0x250
+created by github.com/tencentcloud/CubeSandbox/Cubelet/storage.(*local).init in goroutine 37
+	/workspace/Cubelet/storage/local.go:366 +0x63c
+
+goroutine 85 [chan receive]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/multilock.NewMultiLock.(*MultiLock).loop.func1()
+	/workspace/Cubelet/pkg/multilock/multilock.go:77 +0xad
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRecover.gowrap1.WithRecover.1({0x0?, 0x65732e6472656e69?, 0x31762e6563697672?}, 0x732d736b7361742e?)
+	/workspace/Cubelet/pkg/recov/runtime.go:42 +0x5a
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRecover(...)
+	/workspace/Cubelet/pkg/recov/runtime.go:43
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRecover in goroutine 37
+	/workspace/Cubelet/pkg/recov/runtime.go:36 +0x86
+
+goroutine 131 [chan receive, 8 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/store/image.(*Store).asyncFlushImageRefTime(0xc00100cae0)
+	/workspace/Cubelet/pkg/store/image/image.go:347 +0x66
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/store/image.NewStore in goroutine 37
+	/workspace/Cubelet/pkg/store/image/image.go:125 +0x1f8
+
+goroutine 132 [chan receive]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/multilock.NewMultiLock.(*MultiLock).loop.func1()
+	/workspace/Cubelet/pkg/multilock/multilock.go:77 +0xad
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRecover.gowrap1.WithRecover.1({0x0?, 0xdcf5e5?, 0xc00012b160?}, 0x0?)
+	/workspace/Cubelet/pkg/recov/runtime.go:42 +0x5a
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRecover(...)
+	/workspace/Cubelet/pkg/recov/runtime.go:43
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRecover in goroutine 37
+	/workspace/Cubelet/pkg/recov/runtime.go:36 +0x86
+
+goroutine 133 [chan receive]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/multilock.NewMultiLock.(*MultiLock).loop.func1()
+	/workspace/Cubelet/pkg/multilock/multilock.go:77 +0xad
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRecover.gowrap1.WithRecover.1({0x0?, 0xc001ff85a0?, 0x30a3890?}, 0xc000796690?)
+	/workspace/Cubelet/pkg/recov/runtime.go:42 +0x5a
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRecover(...)
+	/workspace/Cubelet/pkg/recov/runtime.go:43
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRecover in goroutine 37
+	/workspace/Cubelet/pkg/recov/runtime.go:36 +0x86
+
+goroutine 134 [chan receive]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/multilock.NewMultiLock.(*MultiLock).loop.func1()
+	/workspace/Cubelet/pkg/multilock/multilock.go:77 +0xad
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRecover.gowrap1.WithRecover.1({0x0?, 0xc0002f84d0?, 0xc0002f93b0?}, 0xc0004ae7a8?)
+	/workspace/Cubelet/pkg/recov/runtime.go:42 +0x5a
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRecover(...)
+	/workspace/Cubelet/pkg/recov/runtime.go:43
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithRecover in goroutine 37
+	/workspace/Cubelet/pkg/recov/runtime.go:36 +0x86
+
+goroutine 135 [sync.WaitGroup.Wait, 18 minutes]:
+sync.runtime_SemacquireWaitGroup(0x109fe0b?)
+	/usr/local/go/src/runtime/sema.go:110 +0x25
+sync.(*WaitGroup).Wait(0xc001086000?)
+	/usr/local/go/src/sync/waitgroup.go:118 +0x48
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/queueworker.(*queueWorker).start(0xc001126660, 0xc001008e80)
+	/workspace/Cubelet/pkg/queueworker/worker.go:84 +0x12e
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/queueworker.NewQueueWorker in goroutine 37
+	/workspace/Cubelet/pkg/queueworker/worker.go:55 +0x159
+
+goroutine 136 [select]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*volumeLifetime).loopFlush(0xc0004761e0, {0x30a3858, 0xc00107f1a0})
+	/workspace/Cubelet/services/images/volumelifetime.go:169 +0x135
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*volumeLifetime).init in goroutine 37
+	/workspace/Cubelet/services/images/volumelifetime.go:135 +0x48f
+
+goroutine 137 [select, 2 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*volumeLifetime).loopClean(0xc0004761e0, {0x30a3858, 0xc00107f1a0}, 0x0)
+	/workspace/Cubelet/services/images/volumelifetime.go:213 +0x1f7
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*volumeLifetime).init in goroutine 37
+	/workspace/Cubelet/services/images/volumelifetime.go:136 +0x4ef
+
+goroutine 138 [select, 2 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*volumeLifetime).loopClean(0xc0004761e0, {0x30a3858, 0xc00107f1a0}, 0x1)
+	/workspace/Cubelet/services/images/volumelifetime.go:213 +0x1f7
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*volumeLifetime).init in goroutine 37
+	/workspace/Cubelet/services/images/volumelifetime.go:137 +0x54f
+
+goroutine 147 [chan receive, 18 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/queueworker.(*queue).BPop(0xc001008c90?)
+	/workspace/Cubelet/pkg/queueworker/queue.go:65 +0x25
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/queueworker.(*queueWorker).BPop(...)
+	/workspace/Cubelet/pkg/queueworker/worker.go:116
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/queueworker.(*queueWorker).start.func1()
+	/workspace/Cubelet/pkg/queueworker/worker.go:64 +0x36
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithWaitGroup.func1.WithRecover.1({0xc001088008?, 0xc0004af778?, 0xc0004af7d0?}, 0x109f62c?)
+	/workspace/Cubelet/pkg/recov/runtime.go:42 +0x5a
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.WithRecover(...)
+	/workspace/Cubelet/pkg/recov/runtime.go:43
+github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithWaitGroup.func1()
+	/workspace/Cubelet/pkg/recov/runtime.go:75 +0x54
+created by github.com/tencentcloud/CubeSandbox/Cubelet/pkg/recov.GoWithWaitGroup in goroutine 135
+	/workspace/Cubelet/pkg/recov/runtime.go:73 +0xab
+
+goroutine 89 [select]:
+github.com/tencentcloud/CubeSandbox/Cubelet/plugins/cube/internals/metric.(*Plugin).ReportCLS(0xc000cb7dc0, {0x30a3858, 0xc0011bce10})
+	/workspace/Cubelet/plugins/cube/internals/metric/plugin.go:162 +0x3c5
+created by github.com/tencentcloud/CubeSandbox/Cubelet/plugins/cube/internals/metric.init.0.func1 in goroutine 37
+	/workspace/Cubelet/plugins/cube/internals/metric/plugin.go:107 +0x406
+
+goroutine 90 [select]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/gc.(*gcService).run(0xc000698230, {0x30a3890, 0xc000796690})
+	/workspace/Cubelet/services/gc/gcservice.go:90 +0x17d
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/gc.init.1.func1 in goroutine 37
+	/workspace/Cubelet/services/gc/gcservice.go:74 +0x1ec
+
+goroutine 91 [chan receive, 18 minutes]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/cubebox.init.2.func1.2()
+	/workspace/Cubelet/services/cubebox/service.go:161 +0x205
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/cubebox.init.2.func1 in goroutine 37
+	/workspace/Cubelet/services/cubebox/service.go:155 +0x545
+
+goroutine 92 [chan receive]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/cubebox.(*service).destroyDeadContainers(0xc000698320)
+	/workspace/Cubelet/services/cubebox/service.go:966 +0x191
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/cubebox.init.2.func1 in goroutine 37
+	/workspace/Cubelet/services/cubebox/service.go:170 +0x585
+
+goroutine 104 [select]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/cubebox.(*eventMonitor).start.func1()
+	/workspace/Cubelet/services/cubebox/events.go:132 +0x132
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/cubebox.(*eventMonitor).start in goroutine 91
+	/workspace/Cubelet/services/cubebox/events.go:128 +0xb0
+
+goroutine 93 [select]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*imageGCManager).Run(0xc002040750, {0x30a3890, 0xc000796690})
+	/workspace/Cubelet/services/images/image_gc.go:136 +0x1e5
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/images.initFunc in goroutine 37
+	/workspace/Cubelet/services/images/service.go:132 +0x8d5
+
+goroutine 105 [chan receive]:
+github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*imageGCManager).HouseKeepingScheduler(...)
+	/workspace/Cubelet/services/images/image_gc.go:117
+created by github.com/tencentcloud/CubeSandbox/Cubelet/services/images.(*imageGCManager).Run in goroutine 93
+	/workspace/Cubelet/services/images/image_gc.go:127 +0x79
+
+goroutine 95 [IO wait]:
+internal/poll.runtime_pollWait(0x731478259380, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc0011c4780?, 0x900000036?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0011c4780)
+	/usr/local/go/src/internal/poll/fd_unix.go:620 +0x295
+net.(*netFD).accept(0xc0011c4780)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29
+net.(*TCPListener).accept(0xc0011d6480)
+	/usr/local/go/src/net/tcpsock_posix.go:159 +0x1b
+net.(*TCPListener).Accept(0xc0011d6480)
+	/usr/local/go/src/net/tcpsock.go:380 +0x30
+net/http.(*Server).Serve(0xc00024c600, {0x308fe40, 0xc0011d6480})
+	/usr/local/go/src/net/http/server.go:3424 +0x30c
+net/http.Serve(...)
+	/usr/local/go/src/net/http/server.go:2932
+github.com/tencentcloud/CubeSandbox/Cubelet/services/server.(*Server).ServeHttp(0xc0011d6340, {0x308fe40, 0xc0011d6480})
+	/workspace/Cubelet/services/server/server.go:282 +0x512
+main.serve.func1()
+	/workspace/Cubelet/cmd/cubelet/main.go:568 +0x98
+created by main.serve in goroutine 1
+	/workspace/Cubelet/cmd/cubelet/main.go:566 +0x23e
+
+goroutine 96 [IO wait, 6 minutes]:
+internal/poll.runtime_pollWait(0x731478259268, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc0011c4800?, 0x11?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0011c4800)
+	/usr/local/go/src/internal/poll/fd_unix.go:620 +0x295
+net.(*netFD).accept(0xc0011c4800)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29
+net.(*UnixListener).accept(0x4eefc0?)
+	/usr/local/go/src/net/unixsock_posix.go:172 +0x16
+net.(*UnixListener).Accept(0xc0011e59b0)
+	/usr/local/go/src/net/unixsock.go:260 +0x30
+github.com/containerd/ttrpc.(*Server).Serve(0xc000499d40, {0x30a34d8, 0x47b8320}, {0x308fe70, 0xc0011e59b0})
+	/home/builder/go/pkg/mod/github.com/containerd/ttrpc@v1.2.7/server.go:99 +0x1ff
+github.com/containerd/containerd/v2/cmd/containerd/server.(*Server).ServeTTRPC(0x1?, {0x308fe70?, 0xc0011e59b0?})
+	/home/builder/go/pkg/mod/github.com/containerd/containerd/v2@v2.2.2/cmd/containerd/server/server.go:421 +0x35
+github.com/tencentcloud/CubeSandbox/Cubelet/services/server.(*Server).ServeTTRPC(...)
+	/workspace/Cubelet/services/server/server.go:220
+main.serve.func1()
+	/workspace/Cubelet/cmd/cubelet/main.go:568 +0x98
+created by main.serve in goroutine 1
+	/workspace/Cubelet/cmd/cubelet/main.go:566 +0x23e
+
+goroutine 145 [select]:
+net/http.(*persistConn).writeLoop(0xc00203cb40)
+	/usr/local/go/src/net/http/transport.go:2593 +0xe7
+created by net/http.(*Transport).dialConn in goroutine 142
+	/usr/local/go/src/net/http/transport.go:1948 +0x17a5
+
+goroutine 97 [IO wait, 4 minutes]:
+internal/poll.runtime_pollWait(0x731478259150, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc0011c4980?, 0x900000036?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0011c4980)
+	/usr/local/go/src/internal/poll/fd_unix.go:620 +0x295
+net.(*netFD).accept(0xc0011c4980)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29
+net.(*TCPListener).accept(0xc0011d6540)
+	/usr/local/go/src/net/tcpsock_posix.go:159 +0x1b
+net.(*TCPListener).Accept(0xc0011d6540)
+	/usr/local/go/src/net/tcpsock.go:380 +0x30
+google.golang.org/grpc.(*Server).Serve(0xc0002b7400, {0x308fe40, 0xc0011d6540})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:884 +0x473
+github.com/tencentcloud/CubeSandbox/Cubelet/services/server.(*Server).ServeTCP(0x0?, {0x308fe40?, 0xc0011d6540?})
+	/workspace/Cubelet/services/server/server.go:238 +0x2d
+main.serve.func1()
+	/workspace/Cubelet/cmd/cubelet/main.go:568 +0x98
+created by main.serve in goroutine 1
+	/workspace/Cubelet/cmd/cubelet/main.go:566 +0x23e
+
+goroutine 148 [IO wait, 18 minutes]:
+internal/poll.runtime_pollWait(0x731478259038, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc0011c4a00?, 0xc001269960?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc0011c4a00)
+	/usr/local/go/src/internal/poll/fd_unix.go:620 +0x295
+net.(*netFD).accept(0xc0011c4a00)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29
+net.(*UnixListener).accept(0xc002034060?)
+	/usr/local/go/src/net/unixsock_posix.go:172 +0x16
+net.(*UnixListener).Accept(0xc0011e5ec0)
+	/usr/local/go/src/net/unixsock.go:260 +0x30
+google.golang.org/grpc.(*Server).Serve(0xc0002b6400, {0x308fe70, 0xc0011e5ec0})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:884 +0x473
+github.com/containerd/containerd/v2/cmd/containerd/server.(*Server).ServeGRPC(0xc000476690, {0x308fe70, 0xc0011e5ec0})
+	/home/builder/go/pkg/mod/github.com/containerd/containerd/v2@v2.2.2/cmd/containerd/server/server.go:416 +0x4f
+github.com/tencentcloud/CubeSandbox/Cubelet/services/server.(*Server).ServeGRPC(...)
+	/workspace/Cubelet/services/server/server.go:216
+main.serve.func1()
+	/workspace/Cubelet/cmd/cubelet/main.go:568 +0x98
+created by main.serve in goroutine 1
+	/workspace/Cubelet/cmd/cubelet/main.go:566 +0x23e
+
+goroutine 149 [IO wait, 6 minutes]:
+internal/poll.runtime_pollWait(0x731478258f20, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc00109a000?, 0x20?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Accept(0xc00109a000)
+	/usr/local/go/src/internal/poll/fd_unix.go:620 +0x295
+net.(*netFD).accept(0xc00109a000)
+	/usr/local/go/src/net/fd_unix.go:172 +0x29
+net.(*UnixListener).accept(0x4eefc0?)
+	/usr/local/go/src/net/unixsock_posix.go:172 +0x16
+net.(*UnixListener).AcceptUnix(0xc00108a0c0)
+	/usr/local/go/src/net/unixsock.go:247 +0x30
+github.com/tencentcloud/CubeSandbox/Cubelet/services/server.(*tapProvider).Serve(0x0?, {0x308fe70?, 0xc00108a0c0})
+	/workspace/Cubelet/services/server/tap_provider.go:183 +0x67
+github.com/tencentcloud/CubeSandbox/Cubelet/services/server.(*Server).ServeTap(0x0?, {0x308fe70?, 0xc00108a0c0?})
+	/workspace/Cubelet/services/server/server.go:212 +0x25
+main.serve.func1()
+	/workspace/Cubelet/cmd/cubelet/main.go:568 +0x98
+created by main.serve in goroutine 1
+	/workspace/Cubelet/cmd/cubelet/main.go:566 +0x23e
+
+goroutine 107 [select, 10 minutes]:
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc000a3e900, 0x1)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:412 +0x108
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc001fab300)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:575 +0x78
+google.golang.org/grpc/internal/transport.NewServerTransport.func2()
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:335 +0xde
+created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 106
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:333 +0x189b
+
+goroutine 144 [IO wait]:
+internal/poll.runtime_pollWait(0x731478258e08, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc000aa6a00?, 0xc001149000?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc000aa6a00, {0xc001149000, 0x1000, 0x1000})
+	/usr/local/go/src/internal/poll/fd_unix.go:165 +0x27a
+net.(*netFD).Read(0xc000aa6a00, {0xc001149000?, 0x4a7694?, 0x0?})
+	/usr/local/go/src/net/fd_posix.go:55 +0x25
+net.(*conn).Read(0xc00079ce48, {0xc001149000?, 0x4a748f?, 0xc002031b00?})
+	/usr/local/go/src/net/net.go:194 +0x45
+net/http.(*persistConn).Read(0xc00203cb40, {0xc001149000?, 0x95c005?, 0x3079720?})
+	/usr/local/go/src/net/http/transport.go:2125 +0x47
+bufio.(*Reader).fill(0xc0011323c0)
+	/usr/local/go/src/bufio/bufio.go:113 +0x103
+bufio.(*Reader).Peek(0xc0011323c0, 0x1)
+	/usr/local/go/src/bufio/bufio.go:152 +0x53
+net/http.(*persistConn).readLoop(0xc00203cb40)
+	/usr/local/go/src/net/http/transport.go:2278 +0x172
+created by net/http.(*Transport).dialConn in goroutine 142
+	/usr/local/go/src/net/http/transport.go:1947 +0x174f
+
+goroutine 109 [IO wait, 10 minutes]:
+internal/poll.runtime_pollWait(0x731478258bd8, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc000340a00?, 0xc0008f4000?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc000340a00, {0xc0008f4000, 0x8000, 0x8000})
+	/usr/local/go/src/internal/poll/fd_unix.go:165 +0x27a
+net.(*netFD).Read(0xc000340a00, {0xc0008f4000?, 0xc002026bc8?, 0x517cd9?})
+	/usr/local/go/src/net/fd_posix.go:55 +0x25
+net.(*conn).Read(0xc0011e6888, {0xc0008f4000?, 0x517cf9?, 0xc000333f01?})
+	/usr/local/go/src/net/net.go:194 +0x45
+bufio.(*Reader).Read(0xc0012b7b60, {0xc0008e0584, 0x9, 0x54cba8?})
+	/usr/local/go/src/bufio/bufio.go:245 +0x197
+io.ReadAtLeast({0x307ad80, 0xc0012b7b60}, {0xc0008e0584, 0x9, 0x9}, 0x9)
+	/usr/local/go/src/io/io.go:335 +0x91
+io.ReadFull(...)
+	/usr/local/go/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc0008e0584, 0x9, 0xae50dc?}, {0x307ad80?, 0xc0012b7b60?})
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc0008e0540)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc0008e0540)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18
+google.golang.org/grpc/internal/transport.(*http2Server).HandleStreams(0xc0006af1e0, {0x30a3858, 0xc00108b980}, 0xc00108b9b0)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:644 +0x105
+google.golang.org/grpc.(*Server).serveStreams(0xc0002b7400, {0x30a34d8?, 0x47b8320?}, {0x30b1860, 0xc0006af1e0}, {0x30aed18?, 0xc0011e6888?})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:1023 +0x396
+google.golang.org/grpc.(*Server).handleRawConn.func1()
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:958 +0x56
+created by google.golang.org/grpc.(*Server).handleRawConn in goroutine 106
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:957 +0x1cb
+
+goroutine 108 [select, 10 minutes]:
+google.golang.org/grpc/internal/transport.(*http2Server).keepalive(0xc0006af1e0)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:1183 +0x1ec
+created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 106
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:356 +0x18dd
+
+goroutine 163 [select, 4 minutes]:
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc000ad5380, 0x1)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:412 +0x108
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc00109ad00)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:575 +0x78
+google.golang.org/grpc/internal/transport.NewServerTransport.func2()
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:335 +0xde
+created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 162
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:333 +0x189b
+
+goroutine 164 [select, 14 minutes]:
+google.golang.org/grpc/internal/transport.(*http2Server).keepalive(0xc001fb9ba0)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:1183 +0x1ec
+created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 162
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:356 +0x18dd
+
+goroutine 165 [IO wait, 4 minutes]:
+internal/poll.runtime_pollWait(0x731478258cf0, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc000341700?, 0xc000af8000?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc000341700, {0xc000af8000, 0x8000, 0x8000})
+	/usr/local/go/src/internal/poll/fd_unix.go:165 +0x27a
+net.(*netFD).Read(0xc000341700, {0xc000af8000?, 0xc001265bc8?, 0x517cd9?})
+	/usr/local/go/src/net/fd_posix.go:55 +0x25
+net.(*conn).Read(0xc000c3d228, {0xc000af8000?, 0x517cf9?, 0xc000312a01?})
+	/usr/local/go/src/net/net.go:194 +0x45
+bufio.(*Reader).Read(0xc00050aa20, {0xc000aa0e44, 0x9, 0x54cba8?})
+	/usr/local/go/src/bufio/bufio.go:245 +0x197
+io.ReadAtLeast({0x307ad80, 0xc00050aa20}, {0xc000aa0e44, 0x9, 0x9}, 0x9)
+	/usr/local/go/src/io/io.go:335 +0x91
+io.ReadFull(...)
+	/usr/local/go/src/io/io.go:354
+golang.org/x/net/http2.readFrameHeader({0xc000aa0e44, 0x9, 0xae50dc?}, {0x307ad80?, 0xc00050aa20?})
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:242 +0x65
+golang.org/x/net/http2.(*Framer).ReadFrameHeader(0xc000aa0e00)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:505 +0x6b
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc000aa0e00)
+	/home/builder/go/pkg/mod/golang.org/x/net@v0.47.0/http2/frame.go:564 +0x18
+google.golang.org/grpc/internal/transport.(*http2Server).HandleStreams(0xc001fb9ba0, {0x30a3858, 0xc000aeac60}, 0xc000aeac90)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:644 +0x105
+google.golang.org/grpc.(*Server).serveStreams(0xc0002b7400, {0x30a34d8?, 0x47b8320?}, {0x30b1860, 0xc001fb9ba0}, {0x30aed18?, 0xc000c3d228?})
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:1023 +0x396
+google.golang.org/grpc.(*Server).handleRawConn.func1()
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:958 +0x56
+created by google.golang.org/grpc.(*Server).handleRawConn in goroutine 162
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/server.go:957 +0x1cb
+
+goroutine 210 [select, 6 minutes]:
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc001090440, 0x1)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:412 +0x108
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc00109a100)
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/controlbuf.go:575 +0x78
+google.golang.org/grpc/internal/transport.NewServerTransport.func2()
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:335 +0xde
+created by google.golang.org/grpc/internal/transport.NewServerTransport in goroutine 81
+	/home/builder/go/pkg/mod/google.golang.org/grpc@v1.67.1/internal/transport/http2_server.go:333 +0x189b
+
+goroutine 407 [IO wait]:
+internal/poll.runtime_pollWait(0x731421df8810, 0x72)
+	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+internal/poll.(*pollDesc).wait(0xc00109f080?, 0xc0006a1ae1?, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+internal/poll.(*pollDesc).waitRead(...)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+internal/poll.(*FD).Read(0xc00109f080, {0xc0006a1ae1, 0x1, 0x1})
+	/usr/local/go/src/internal/poll/fd_unix.go:165 +0x27a
+net.(*netFD).Read(0xc00109f080, {0xc0006a1ae1?, 0xc001001b58?, 0xc00202df70?})
+	/usr/local/go/src/net/fd_posix.go:55 +0x25
+net.(*conn).Read(0xc000c3cb50, {0xc0006a1ae1?, 0xc00078a9d8?, 0xc00078a9a8?})
+	/usr/local/go/src/net/net.go:194 +0x45
+net/http.(*connReader).backgroundRead(0xc0006a1ad0)
+	/usr/local/go/src/net/http/server.go:690 +0x37
+created by net/http.(*connReader).startBackgroundRead in goroutine 406
+	/usr/local/go/src/net/http/server.go:686 +0xb6

@@ -1,0 +1,137 @@
+{
+  "volumes": [
+    {
+      "name": "cube_rootfs_rw",
+      "volume_source": {
+        "empty_dir": {
+          "SizeLimit": "1G"
+        }
+      }
+    }
+  ],
+  "cube_network_config": {
+    "allowInternetAccess": true
+  },
+  "containers": [
+    {
+      "name": "cubebox-name-0",
+      "image": {
+        "image": "rfs-012559831ee02da517a1ae56",
+        "annotations": {
+          "cube.master.rootfs.artifact.token": "1eab443d-6ea3-43bd-a901-b5ca3502f814",
+          "cube.master.rootfs.artifact.url": "http://0.0.0.0:8089/cube/template/artifact/download?artifact_id=rfs-012559831ee02da517a1ae56&token=1eab443d-6ea3-43bd-a901-b5ca3502f814",
+          "cube.master.rootfs.writable_layer_size": "1G",
+          "cube.master.template.spec_fingerprint": "012559831ee02da517a1ae56322b9f27e129efde71f1141aa56bebf9f177c79b",
+          "cube.master.rootfs.artifact.id": "rfs-012559831ee02da517a1ae56",
+          "cube.master.rootfs.artifact.sha256": "b5ac36bba961c05c9cf7d54b78de014ac1a5ad683f717705a3dc6b0304c00499",
+          "cube.master.rootfs.artifact.size_bytes": "1073741824"
+        },
+        "storage_media": "ext4",
+        "writable_layer_size": "1G"
+      },
+      "args": [
+        "/usr/local/bin/start-lightweight-code-interpreter.sh"
+      ],
+      "working_dir": "/workspace",
+      "envs": [
+        {
+          "key": "CODE_INTERPRETER_HOST",
+          "value": "0.0.0.0"
+        },
+        {
+          "key": "CODE_INTERPRETER_PORT",
+          "value": "49999"
+        },
+        {
+          "key": "CODE_INTERPRETER_WORKDIR",
+          "value": "/workspace"
+        },
+        {
+          "key": "DEBIAN_FRONTEND",
+          "value": "noninteractive"
+        },
+        {
+          "key": "GPG_KEY",
+          "value": "7169605F62C751356D054A26A821E680E5FA6305"
+        },
+        {
+          "key": "LANG",
+          "value": "C.UTF-8"
+        },
+        {
+          "key": "PATH",
+          "value": "/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        },
+        {
+          "key": "PYTHONDONTWRITEBYTECODE",
+          "value": "1"
+        },
+        {
+          "key": "PYTHONUNBUFFERED",
+          "value": "1"
+        },
+        {
+          "key": "PYTHON_SHA256",
+          "value": "fb85a13414b028c49ba18bbd523c2d055a30b56b18b92ce454ea2c51edc656c4"
+        },
+        {
+          "key": "PYTHON_VERSION",
+          "value": "3.12.12"
+        },
+        {
+          "key": "UV_TOOL_BIN_DIR",
+          "value": "/usr/local/bin"
+        }
+      ],
+      "volume_mounts": [
+        {
+          "name": "cube_rootfs_rw",
+          "container_path": "/"
+        }
+      ],
+      "r_limit": {
+        "no_file": 1000000
+      },
+      "resources": {
+        "cpu": "2000m",
+        "mem": "2000Mi"
+      },
+      "security_context": {
+        "privileged": true
+      },
+      "probe": {
+        "probe_handler": {
+          "http_get": {
+            "path": "/health",
+            "port": 49999,
+            "host": ""
+          }
+        },
+        "timeout_ms": 30000,
+        "period_ms": 500,
+        "success_threshold": 1,
+        "failure_threshold": 60
+      }
+    }
+  ],
+  "annotations": {
+    "cube.master.appsnapshot.template.id": "tpl-c33298206d4846deac922031",
+    "cube.master.template.spec_fingerprint": "012559831ee02da517a1ae56322b9f27e129efde71f1141aa56bebf9f177c79b",
+    "com.exposed_ports": "49983:49999",
+    "cube.master.rootfs.writable_layer_size": "1G",
+    "cube.master.appsnapshot.template.version": "v2",
+    "cube.master.rootfs.artifact.id": "rfs-012559831ee02da517a1ae56",
+    "cube.master.system_disk_size": "1",
+    "cube.master.components.envd.version": "0.5.11",
+    "cube.master.appsnapshot.version": "v2"
+  },
+  "labels": {
+    "cube.master.instance.type": "cubebox",
+    "cube.master.components.envd.version": "0.5.11",
+    "cube.master.appsnapshot.template.id": "tpl-c33298206d4846deac922031",
+    "X-Caller": "cubecli"
+  },
+  "instance_type": "cubebox",
+  "network_type": "tap",
+  "namespace": "default"
+}
